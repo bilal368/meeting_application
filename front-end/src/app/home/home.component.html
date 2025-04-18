@@ -1,0 +1,18 @@
+<div class="row updateNotificationDiv" *ngIf="maintananceDiv">
+  <div class=" col-10">
+    <p class="mt-1 ms-1">{{message}}</p>
+  </div>
+  <div class="mt-1 col-2 text-end">
+    <button class="btn btn-sm" (click)="closeNotificationDiv()">X</button>
+  </div>
+</div>
+<app-header></app-header>
+<div class="container-fluid">
+  <div class="router">
+    <div>
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

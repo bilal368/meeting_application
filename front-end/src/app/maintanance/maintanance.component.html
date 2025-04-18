@@ -1,0 +1,9 @@
+<div style="height: 100px; display: flex; align-items: center; justify-content: center;">
+    <p>
+        The system is under maintenance.
+        Please try again after
+        <span style="color: red;">
+            {{ hours | number: '2.0' }}:{{ minutes | number: '2.0' }}:{{ seconds | number: '2.0' }} {{ label }}
+        </span>
+    </p>    
+</div>

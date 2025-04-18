@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="outer-div">
+    <div style="display: flex;padding-left: 50px;">
+      <div class="mt-2">
+        <mat-icon style="cursor: pointer;"(click)="setProfileNotification(true)">arrow_back</mat-icon>
+      </div>
+      <div class="mt-2">
+        Go back
+      </div>
+    </div>
+    <div class="top-div">
+      <div class="row">
+        <div> <label style="font-size: 20px;padding-left: 40px;font-weight: bold;">Join a Meeting</label></div>
+      </div>
+    </div>
+    <div class="input">
+      <form [formGroup]="joinForm" #f="ngForm">
+        <div class="row mt-2">
+          <mat-form-field class="example-full-width">
+            <input matInput type="text" placeholder="Meeting ID" formControlName="meetingId" required>
+            <mat-error *ngIf="joinForm.get('meetingId')?.hasError('pattern')">
+              Only numbers are allowed.
+            </mat-error>
+          </mat-form-field>
+          <!-- <div  *ngIf="joinForm.get('meetingId')?.hasError('pattern')" style="color: red;height: 10px;" class=""><p>Only numbers are allowed.</p></div> -->
+        </div>
+        <div class="row mt-2">
+          <mat-form-field class="example-full-width">
+            <input matInput type="text" placeholder="Your Name" formControlName="name" required>
+          </mat-form-field>
+        </div>
+        <div class="row mt-2">
+          <mat-form-field class="example-full-width">
+            <input matInput type="password" placeholder=" Passcode" formControlName="password" required>
+          </mat-form-field>
+
+        </div>
+      </form>
+      <div>
+        <button class="btn btn-md submit-button" (click)="getSignature()"
+          [disabled]="!f.valid">Join</button>
+      </div>
+
+    </div>
+
+    <div class="paragraph">
+      <p>* If you received an invitation link, tap on the link to join meeting </p>
+    </div>
+  </div>
+</div>
+
+<div id="meetingSDKElement">
+  <!-- Meeting SDK renders here when a user starts or joins a Zoom meeting -->
+</div>

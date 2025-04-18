@@ -1,0 +1,51 @@
+<div class="container">
+
+  <div class="outer-div">
+    <div class="top-div">
+      <div class="row">
+        <div class="col-4">
+          <button class="btn" style="color: white;" style="color: white;cursor: pointer;"
+            (click)="route()">Cancel</button>
+        </div>
+
+        <div class="col">
+          <label style="font-size: 20px;">Start a Meeting</label>
+
+        </div>
+      </div>
+      <div class="input">
+        <div class="row fields"
+          style="border-bottom: 1px solid black; padding-bottom: 20px; border-top: 1px solid black; padding-top: 20px;">
+          <div class="col-10">
+            <label>Video On</label>
+          </div>
+          <div class="col-2">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <div class="row fields" style="border-bottom: 1px solid black; padding-bottom: 20px;">
+          <div class="col-10">
+            <label>Use Personal Meeting ID (PM)</label>
+          </div>
+          <div class="col-2">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <div class="row text-center startButton">
+          <div>
+            <button class="btn join" (click)="createMeeting()">Start a Meeting</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="meetingSDKElement">
+</div>

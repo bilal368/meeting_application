@@ -1,0 +1,42 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="navBar">
+            <button class="btn" matDialogClose>X</button>
+        </div>
+    </div>
+    <div class="row" *ngIf="!loading">
+        <div class="col">
+            <p *ngIf="!ActivePlan" class="labelHead">
+                You currently do not have an active plan.<br>
+                <a class="btn btn-sm mt-3 buyButton" href="https://shop.mtn.ng/shop/ict/meetings-plus.html" target=”_blank”>Buy a
+                    plan</a>
+            </p>
+            <p *ngIf="ActivePlan">
+                Plan: {{PlanName}}<br>
+                <span>Expires on: {{expireDate}}.</span><br>
+                <a class="btn btn-sm mt-4 buyButton" href="https://shop.mtn.ng/shop/ict/meetings-plus.html" target=”_blank”>Buy a
+                    plan</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="row" *ngIf="loading">
+        <div class="text-center">
+          <div class="lds-default">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+</div>

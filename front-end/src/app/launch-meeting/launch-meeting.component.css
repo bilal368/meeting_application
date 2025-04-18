@@ -1,0 +1,14 @@
+.background {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    background-color: var(--primary);
+}
+
+.join {
+    background-color: var(--primary);
+    color: white;
+    border-radius: 19px;
+}

@@ -1,0 +1,96 @@
+<div class="toolbar">
+    <div>
+    </div>
+    <div>
+        <button class="btn btn-sm" mat-dialog-close><mat-icon>close</mat-icon></button>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row" *ngIf="enableMail">
+        <div style="display: flex;align-items: center;"> 
+            <mat-form-field class="mt-1" style="width: 70vh;">
+                <mat-label>To</mat-label>
+                <mat-chip-grid #chipGrid>
+                    <mat-chip-row *ngFor="let email of emails" (removed)="remove(email)">
+                        {{email}}
+                        <button matChipRemove>
+                            <mat-icon>cancel</mat-icon>
+                        </button>
+                    </mat-chip-row>
+                    <input placeholder="Add recipients" [matChipInputFor]="chipGrid"
+                        [matChipInputSeparatorKeyCodes]="separatorKeysCodes" [matChipInputAddOnBlur]="addOnBlur"
+                        (matChipInputTokenEnd)="add($event)">
+                    <!-- <mat-error *ngIf="errorMessage"><mat-icon matTooltip="Invalid email">error</mat-icon></mat-error> -->
+                </mat-chip-grid>
+            </mat-form-field>
+            <button class="btn btn-sm mt-2" matTooltip="Cancel" [matTooltipPosition]="'above'"
+                (click)="cancel()"><mat-icon>cancel</mat-icon></button>
+            <button class="btn btn-sm shareButton" matTooltip="Send Email" [matTooltipPosition]="'above'"
+                (click)="sendEmail()" [disabled]="emails.length === 0||loading">Send Email</button>
+
+        </div> 
+
+    </div>
+    <div class="summaryDetails" *ngIf="!loading">
+        <h4>
+            {{summaryTitle}}
+        </h4>
+
+        <h5 style="font-weight: bold;">Quick recap</h5>
+        <div>
+            <ng-template #displayMode>
+                <p>{{summaryOverView}}</p>
+            </ng-template>
+            <div *ngIf="isEditMode; else displayMode">
+                <textarea class="form-control editable-field" rows="5" [(ngModel)]="summaryOverView"></textarea>
+            </div>
+
+        </div>
+        <hr>
+
+        <h5 style="font-weight: bold;">Summary</h5>
+        <div *ngFor="let data of summaryDetails; let i = index">
+            <div *ngIf="isEditMode; else displayMode">
+                <input class="form-control editable-field mt-1" type="text" [(ngModel)]="data.label" /><br>
+                <textarea class="form-control editable-field" rows="5" [(ngModel)]="data.summary"></textarea>
+            </div>
+            <ng-template #displayMode>
+                <label style="font-weight: bold; font-size: 20px;">{{ data.label }}</label><br>
+                <p>{{ data.summary }}</p>
+            </ng-template>
+        </div>
+
+        <div class="text-center">
+            <p style="font-style: italic;">AI-generated content may be inaccurate or misleading. Always check for
+                accuracy.</p>
+        </div>
+    </div>
+    <div class="mt-1" *ngIf="!loading">
+        <button class="btn btn-sm shareButton" (click)="shareSummary()" [disabled]="loading">Share Summary</button>
+        <button class="btn btn-sm ms-2 shareButton" (click)="enableEdit()" [disabled]="loading">
+            {{ isEditMode ? 'Cancel Edit' : 'Edit' }}
+        </button>
+        <button *ngIf="isEditMode;" class="btn btn-sm ms-2 editButton" (click)="saveEditedData()" [disabled]="loading">Save</button>
+        <button class="btn btn-sm ms-2 shareButton" (click)="DeleteSummary()" [disabled]="loading">Delete</button>
+    </div>
+</div>
+<div class="row" *ngIf="loading">
+    <div class="text-center" style="margin-top: 18vh;margin-left: 2vh;">
+        <div class="lds-default">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>

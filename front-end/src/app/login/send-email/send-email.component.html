@@ -1,0 +1,65 @@
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid" style="display: flex;justify-content: space-between;">
+        <a class="navbar-brand">
+            <img src="\assets\MTN-Logo.png" class="img-fluid" style="max-height: 45px;">
+        </a>
+      
+        <form class="d-flex" role="search">
+        </form>
+    </div>
+</nav>
+<div class="background container-fluid">
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4"></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="mt-5 p-2" style="display: flex;flex-direction: row;justify-content: space-between;">
+                <form [formGroup]="recoveryForm" #f="ngForm" style=" width:500px;" *ngIf="form">
+                    <div>
+                        <h3 class="text-center">Reset Password</h3>
+                    </div>
+                    <div class="mt-4">
+                        <input type="text" placeholder="Enter Email" class="form-control mt-2 login-input"
+                            formControlName="email">
+                        <div style="height: 20px">
+                            <a *ngIf="recoveryForm.controls['email'].invalid &&
+                                      (recoveryForm.controls['email'].dirty || recoveryForm.controls['email'].touched)"
+                                class="mt-1">
+                                Enter a valid Mail
+                            </a>
+                        </div>
+        
+                    </div>
+                    <div class="mt-2" style="display: flex;justify-content: space-between;">
+                        <a style="cursor: pointer;" (click)="EnableLogin()">
+                            Back to login
+                        </a>
+                        <button class="btn btn-md submit-button" (click)="sendMail()" [disabled]="!f.valid">Send
+                            Recovery Mail</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4"></div>
+    
+      
+        <div class="row" *ngIf="loading">
+            <div class="text-center" style="margin-top: 20vh;">
+              <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div>
+              </div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            </div>
+          </div>
+    </div>
+</div>
+
+
+<div class="containercLASS">
+    <div class="box">
+  
+    </div>
+    <div class="text-center">
+      <div class="mt-4">
+        <h6 style="color: white;">Powered By Zoom</h6>
+      </div>
+    </div>
+  </div>
+  

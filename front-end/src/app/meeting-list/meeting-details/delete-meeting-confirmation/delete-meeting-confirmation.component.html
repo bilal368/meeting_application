@@ -1,0 +1,71 @@
+<mat-toolbar>
+  <p class="mt-2">{{heding}}</p>
+  <span class="spacer"></span>
+  <button class="btn close-button" matDialogClose>X</button>
+</mat-toolbar>
+
+<div *ngIf="!isLoading">
+  <div class="container p-4" *ngIf="!occurenceId&&!edit">
+    <div class="row">
+      <div>
+        <h5>Are you sure to delete this meeting ?</h5>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-6 text-center">
+        <button class="btn buttons" matDialogClose>Decline</button>
+      </div>
+      <div class="col-6 text-center">
+        <button class="btn buttons" (click)="deleteConfirmation()">Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container p-4" *ngIf="occurenceId&&!edit">
+    <div class="row">
+      <div>
+        <h5>Are you sure to delete this meeting ?</h5>
+      </div>
+    </div>
+    <div class="mt-4" style="display: flex;justify-content: space-between;">
+      <div>
+        <button class="btn buttons"  (click)="deleteThisOccurence()">Delete this
+          occurrence</button>
+      </div>
+      <div>
+        <button class="btn buttons" (click)="deleteConfirmation()">Delete all occurrences</button>
+      </div>
+      <div>
+        <button class="btn" style="background-color:lightgray;border-radius: 32px;" matDialogClose>Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container p-4" *ngIf="edit&&occurenceId||edit&&!occurenceId">
+    <div class="row">
+      <div>
+        <h5>Are you sure to edit this meeting?</h5>
+      </div>
+    </div>
+    <div class="mt-4" style="display: flex;justify-content: space-between;">
+      <div>
+        <button class="btn buttons" (click)="editThisOccurence()">Edit this occurrence</button>
+      </div>
+      <div>
+        <button class="btn buttons" (click)="editConfirmation()">Edit all occurrences</button>
+      </div>
+      <div>
+        <button class="btn" style="background-color:lightgray;border-radius: 32px;" matDialogClose>Decline</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="display: flex;text-align: center; align-items: center;justify-content: center;margin-top:8vh;" *ngIf="isLoading">
+  <div class="lds-facebook">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+</div>

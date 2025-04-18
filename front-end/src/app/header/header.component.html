@@ -1,0 +1,63 @@
+
+<!-- new -->
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" style="color: black;" [routerLink]="['/home/meeting-list']">
+      <img src="\assets\mtnBlack.png" style="height: 40px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      </ul>
+      <form class="d-flex">
+        <div style="display: flex; align-items: center;justify-content: center;text-align: center;">
+          <h5 class="mt-2">{{userName}}</h5>
+            <div class="avatar ms-1"  [matMenuTriggerFor]="menu">{{userInitials}}</div>
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item [routerLink]="['usage-history']" (click)="setValue('Usage');setRoute('Usage')">Usage history</button>
+  <button mat-menu-item [routerLink]="['usage-history']" (click)="setValue('Purchase');setRoute('Purchase')">Purchase history</button>
+  <button mat-menu-item  [routerLink]="['profile']">Profile</button>
+  <button mat-menu-item [routerLink]="['update-password']">Update password</button>
+</mat-menu> -->
+
+
+<div class="navbar">
+  <div>
+    <a [routerLink]="['/home/meeting-list']">
+      <img src="\assets\mtnBlack.png" style="height:28px;width: 56px;">
+    </a>
+  </div>
+  <div class="centerImgDiv" >
+    <img class="meetingsPlusImage" src="\assets\meetingsPlusWhite.png" style="height: 27px;width:105px;">
+  </div>
+  <div class="d-flex">
+    <div   (click)="setProfileNotification(true)" [routerLink]="['/home/meeting-list']" class="homeButton"  >
+      <div style="padding-right: 5px;">
+        <!-- <mat-icon>home</mat-icon> -->
+        <img src="\assets\HomeIcon.png" height="20px" width="20px">
+      </div>
+      <div class="mt-1">
+        <label style="font-size: 16px;" style="cursor: pointer;">Home</label>
+      </div>
+    </div>
+    <div style="display: flex; align-items: center;justify-content: center;text-align: center;">
+      <h5 class="username mt-2" style="font-size: 16px;">{{userName}}</h5>
+        <div class="avatar ms-1" style="font-size: 16px;" [matMenuTriggerFor]="menu">{{userInitials}}</div>
+    </div>
+  </div>
+</div>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item [routerLink]="['usage-history']" (click)="setValue('Usage');setRoute('Usage')">Usage History</button>
+  <button mat-menu-item [routerLink]="['usage-history']" (click)="setValue('Purchase');setRoute('Purchase')">Purchase History</button>
+  <button mat-menu-item  [routerLink]="['profile']">Account Settings</button>
+  <button mat-menu-item [routerLink]="['update-password']">Update password</button>
+  <button mat-menu-item  (click)="logout()">Log Out</button>
+</mat-menu>

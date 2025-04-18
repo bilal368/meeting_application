@@ -1,0 +1,99 @@
+/* .body{
+    display: flex;
+    justify-content: center;
+}
+.playDiv{
+    height:50vh;
+    width: 50vh;
+    border: 1px solid black;
+} */
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.body {
+    height: 90vh;
+    /* background-color: aqua; */
+}
+
+.toolbar {
+    background-color: transparent;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center-image {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin-left: -60px;
+}
+
+
+.custom-header {
+    background: linear-gradient(180deg, #FFDC7A 39.98%, #FFFFFF 86.29%);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* / Style for the iframe / */
+/* iframe {
+    width: 100%;
+    border: none;
+    margin-top: 40px;
+} */
+.footer {
+    /* background: linear-gradient(180deg, #FFDC7A 39.98%, #FFFFFF 86.29%); */
+    background:white;
+    height: 20vh;
+    position: fixed;
+    width: 100%;
+    top: 81vh;
+    left: 0;
+
+}
+#zoomIframe {
+    overflow: hidden;
+    /* Hide overflow for the iframe */
+    border: none;
+    margin-top: 5vh;
+    /* Optionally remove the iframe border */
+}
+
+@media only screen and (max-width: 844px) {
+    .toolbar {
+        padding: 40px;
+    }
+
+    .center-image {
+        justify-content: end;
+    }
+
+    .footer {
+        /* background: linear-gradient(180deg, #FFDC7A 39.98%, #FFFFFF 86.29%); */
+        background: white;
+        height: 30vh;
+        position: fixed;
+        width: 100%;
+        top: 78vh;
+        left: 0;
+
+    }
+
+    #zoomIframe {
+        overflow: hidden;
+        /* Hide overflow for the iframe */
+        border: none;
+        /* Optionally remove the iframe border */
+    }
+}

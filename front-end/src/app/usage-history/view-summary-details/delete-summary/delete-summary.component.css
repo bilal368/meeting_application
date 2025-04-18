@@ -1,0 +1,12 @@
+.toolbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--c2);
+    height: 60px;
+    padding: 10px;
+}
+.shareButton{
+    background-color: black;
+    color: white;
+}

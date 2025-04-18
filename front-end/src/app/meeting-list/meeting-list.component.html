@@ -1,0 +1,242 @@
+<div>
+  <div class="row listRow" style="margin-top: 50px;">
+    <div class="col-lg-6 col-sm-12 col-12">
+      <div class="colOne">
+        <div class="first-Div">
+          <div class="iconouterDiv">
+            <div class="">
+              <p *ngIf="!ActivePlan" class="labelHead">
+                <!-- Your plan<br> -->
+                You currently do not have an active plan.<br>
+                <a class="btn btn-sm mt-2 buyButton" href="https://shop.mtn.ng/shop/ict/meetings-plus.html"
+                  target=”_blank”>Buy a
+                  plan</a>
+              </p>
+              <p *ngIf="ActivePlan">
+                <span style="font-weight: bold;">{{PlanName}}</span><br>
+                <span>Expires on: {{expireDate}}.</span><br>
+                <span>{{upcomingplans}}</span><br>
+                <a class="btn btn-sm mt-2 buyButton" href="https://shop.mtn.ng/shop/ict/meetings-plus.html"
+                  target=”_blank”>Buy a
+                  plan</a>
+              </p>
+            </div>
+            <div>
+              <img src="\assets\calander.png" class="imgStyle" style="height: 80px;width: 80px;">
+            </div>
+          </div>
+          <div>
+            <div class="text-center">
+            </div>
+          </div>
+        </div>
+        <div class="second-div mt-3">
+          <div class="text-center itmsDiv" (click)="createMeeting()">
+            <button class="btn">
+              <img src="\assets\video1.png" height="30px">
+            </button>
+            <h3 class="iconLabel">New meeting</h3>
+          </div>
+          <div class="text-center itmsDiv" (click)="switchDivs('joinMeeting')"><button class="btn">
+              <img src="\assets\join.png" height="30px">
+            </button>
+            <h3 class="iconLabel">Join a meeting</h3>
+          </div>
+          <div class="text-center itmsDiv" (click)="switchDivs('sheduleMeeting')"> <button class="btn">
+              <img src="\assets\calander1.png" height="30px">
+            </button>
+            <h3 class="iconLabel">Schedule</h3>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="col-lg-6 col-sm-12 col-12" *ngIf="meetinglistDiv">
+
+      <div class="colTwo">
+        <div class="outer-div">
+
+          <div class="container">
+            <div class="row text-center tabHead pt-1 pb-1 ps-2 pe-2">
+              <div class="col-6" [ngClass]="nonRecurringClass" (click)="toggleClasses('nonrecurring')">Meetings</div>
+              <div class="col-6 " [ngClass]="RecurringClass" (click)="toggleClasses('recurring')">Recurring
+              </div>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="row">
+              <div *ngIf="!loading && nonReccurring">
+                <!-- <div *ngFor="let meetingList of meetingList">
+                  <div class="row">
+                    <div class="dateDiv mt-1">
+                      <div>
+                        <ng-container *ngIf="isTodayOrTomorrow(meetingList.start_time); else otherDate">
+                          {{ isTodayOrTomorrow(meetingList.start_time) }}
+                        </ng-container>
+                        <ng-template #otherDate>
+                          {{ meetingList.start_time | date:'dd-MM-yyyy' }}
+                        </ng-template>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-div">
+                    <div class="col-2 text-center" style="font-size: small;color: var(--c4);">{{ meetingList.start_time
+                      |
+                      date:'HH:mm':'UTC'}} </div>
+                    <div class="col-8 p-2" style="cursor: pointer;"
+                      (click)="openMeetingDetails(meetingList.id,meetingList.start_time)">
+                      <div style="height: auto;" class="overflow-ellipsis">
+                        <a style="font-weight:normal;font-size:small;color: black;"> {{meetingList.topic}}</a> <br>
+                        <a style="font-weight:small;font-size:x-small;color: var(--c4);">Meeting ID :
+                          {{meetingList.id}}</a>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <button class="btn btn-sm startButton" (click)="joinMeeting(meetingList.id)">Start</button>
+                    </div>
+                  </div>
+                </div> -->
+                <div *ngFor="let meetingDate of groupNormalMeetings">
+                  <div class="dateDiv mt-1">
+                    <ng-container *ngIf="isTodayOrTomorrow(meetingDate.date); else otherDate">
+                      {{ isTodayOrTomorrow(meetingDate.date) }}
+                    </ng-container>
+                    <ng-template #otherDate>
+                      {{ meetingDate.date}}
+                    </ng-template>
+                  </div>
+
+                  <div *ngFor="let meeting of meetingDate.meetings" class="list-div">
+                    <div class="col-2 text-center" style="font-size: small;color: var(--c4);">
+                      {{ meeting.start_time | date:'HH:mm':'UTC' }}
+                    </div>
+                    <div class="col-8 p-2" style="cursor: pointer;"
+                      (click)="openMeetingDetails(meeting.id, meeting.start_time)">
+                      <div style="height: auto;" class="overflow-ellipsis">
+                        <a style="font-weight:normal;font-size:small;color: black;">{{ meeting.topic }}</a><br>
+                        <a style="font-weight:small;font-size:x-small;color: var(--c4);">Meeting ID: {{ meeting.id
+                          }}</a>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <button class="btn btn-sm me-2 startButton" (click)="joinMeeting(meeting.id)">Start</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="noData" *ngIf="noReccurData">
+                  <img src="\assets\backGround.png" width="137px" height="97px"><br>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div *ngIf="!loading && reccuring">
+                <!-- <div *ngFor="let meetingList of recurrenceMeetingList">
+                  <div class="row">
+                    <div class="dateDiv mt-1">
+                      <div>
+                        <ng-container *ngIf="isTodayOrTomorrow(meetingList.start_time); else otherDate">
+                          {{ isTodayOrTomorrow(meetingList.start_time) }}
+                        </ng-container>
+                        <ng-template #otherDate>
+                          {{ meetingList.start_time | date:'dd-MM-yyyy' }}
+                        </ng-template>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-div">
+                    <div class="col-2 text-center" style="font-size: small;color: var(--c4);">{{ meetingList.start_time
+                      |
+                      date:'HH:mm':'UTC' }}</div>
+                    <div class="col-8 p-2" style="cursor: pointer;" (click)="openMeetingDetails(meetingList.id,meetingList.start_time)">
+                      <div style="height: auto;">
+                        <a style="font-weight:normal;font-size:small;color: black;"> {{meetingList.topic}}</a> <br>
+                        <a style="font-weight:small;font-size:x-small;color: var(--c4);">Meeting ID :
+                          {{meetingList.id}}</a>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <button class="btn btn-sm me-2 startButton" (click)="joinMeeting(meetingList.id)">Start</button>
+                    </div>
+                  </div>
+                </div> -->
+                <div *ngFor="let group of groupedMeetings">
+                  <!-- Date header -->
+                  <div class="dateDiv mt-1">
+                    <div>
+                      <ng-container *ngIf="isTodayOrTomorrow(group.date); else otherDate">
+                        {{ isTodayOrTomorrow(group.date) }}
+                      </ng-container>
+                      <ng-template #otherDate>
+                        {{ group.date}}
+                      </ng-template>
+                    </div>
+                  </div>
+
+                  <!-- Meetings for this date -->
+                  <div *ngFor="let meeting of group.meetings" class="list-div">
+                    <div class="col-2 text-center" style="font-size: small;color: var(--c4);">
+                      {{ meeting.start_time | date:'HH:mm':'UTC' }}
+                    </div>
+                    <div class="col-8 p-2" style="cursor: pointer;"
+                      (click)="openMeetingDetails(meeting.id, meeting.start_time)">
+                      <div style="height: auto;">
+                        <a style="font-weight:normal;font-size:small;color: black;">{{ meeting.topic }}</a> <br>
+                        <a style="font-weight:small;font-size:x-small;color: var(--c4);">Meeting ID : {{ meeting.id
+                          }}</a>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <button class="btn btn-sm me-2 startButton" (click)="joinMeeting(meeting.id)">Start</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="noData" *ngIf="reccurData">
+                  <img src="\assets\backGround.png" width="137px" height="97px"><br>
+                </div>
+              </div>
+              <div class="row" *ngIf="loading">
+                <div class="text-center" style="margin-top: 18vh;margin-left: 2vh;">
+                  <div class="lds-default">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-lg-6 col-sm-12 col-12" *ngIf="joinMeetingDiv">
+      <div class="colTwo">
+        <app-join-meeting></app-join-meeting>
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-sm-12 col-12" *ngIf="sheduleMettingDiv">
+      <div class="colTwo">
+        <app-schedule-meeting></app-schedule-meeting>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div id="meetingSDKElement">
+    <!-- Meeting SDK renders here when a user starts or joins a Zoom meeting -->
+  </div>

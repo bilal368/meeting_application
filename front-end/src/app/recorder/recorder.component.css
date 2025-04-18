@@ -1,0 +1,21 @@
+.custom-header {
+    background-color: #fffc00;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 8%;
+    top: 0;
+    left: 0;
+}
+/* Style for the iframe */
+iframe {
+    overflow: hidden;
+    width: 100%;
+    border: none;
+    margin-top: -7px; 
+}
+
+#zoomIframe{
+    overflow: hidden !important;
+}

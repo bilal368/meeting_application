@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row p-5 mt-3 text-center">
+        <div class="col">
+            <h3>{{message}}</h3>
+        </div>
+    </div>
+    <!-- <div class="row">
+        <div class="col-4"> <button class="btn" mat-button mat-dialog-close>OK</button>
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4"> <button class="btn" mat-button>Copy to Clipboard</button></div>
+    </div> -->
+    <div style="display: flex;justify-content: space-evenly;">
+        <div> <button class="btn buttons" mat-dialog-close>OK</button>
+        </div>
+        <div> <button class="btn  buttons"  (click)="copyMeetingDetails()">Copy to Clipboard</button>
+        </div>
+
+    </div>
+
+</div>

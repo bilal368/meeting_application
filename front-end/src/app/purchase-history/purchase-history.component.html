@@ -1,0 +1,59 @@
+<!-- <div class="container"> -->
+<div class="outer-div">
+  <div class="usageHistory">
+    <div class="col-4">
+      <button class="btn" style="color: black; cursor: pointer;text-decoration: underline;" (click)="route()">
+        Cancel
+      </button>
+    </div>
+  </div>
+  <div class="top-div">
+    <div class="row">
+      <div class="text-center">
+        <label style="font-size: 20px;">Purchase History</label>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <table mat-table *ngIf="!noData">
+      <thead>
+        <tr>
+          <th style="text-align: left;" class="ps-2">Plan Name</th>
+          <th style="text-align: left;"></th>
+          <th style="text-align: left;"></th>
+          <th style="text-align: left;"></th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody *ngIf="!noData">
+        <tr *ngFor="let data of convertedPurchaseHistory;let i = index">
+          <td style="font-size: smaller;text-align: left;" class="overflow-ellipsis ps-2">{{ data.bundlePlanName}}</td>
+          <td style="font-size: smaller;text-align: left;"> {{ data.bundlePurchaseDate | date: 'dd-MM-yy'}}<br>
+            <div class="time">{{ data.bundlePurchaseDate | date: 'hh:mm a'}}</div>
+          </td>
+          <td *ngIf="data.bundleStartDate!=null" style="font-size: smaller;text-align: left;">
+            {{ data.bundleStartDate | date: 'dd-MM-yy'}}<br>
+            <div class="time"> {{ data.bundleStartDate | date: 'hh:mm a'}}
+            </div>
+          </td>
+          <td *ngIf="data.bundleStartDate==null" style="font-size: smaller;text-align: left;">
+           Not Set
+          </td>
+          <td *ngIf="data.bundleExpiryDateAndTIme!=null" style="font-size: smaller;text-align: left;">
+            {{ data.bundleExpiryDateAndTIme | date: 'dd-MM-yy'}}<br>
+            <div class="time"> {{ data.bundleExpiryDateAndTIme | date: 'hh:mm a'}}
+            </div>
+          </td>
+          <td *ngIf="data.bundleExpiryDateAndTIme==null" style="font-size: smaller;text-align: left;">
+            Not Set
+          </td>
+          <td *ngIf="data.active==1&&data.isActivePlan==1"><button class="activeButton">Active</button></td>
+          <td *ngIf="data.active==1&&data.isActivePlan==0"><button class="inactive text-center">Upcoming</button> </td>
+          <td *ngIf="data.active==0&&data.isActivePlan==0"><button class="expired">Expired</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="noData" *ngIf="noData">No Purchase History Found</div>
+  </div>
+</div>
+<!-- </div> -->

@@ -1,0 +1,80 @@
+<mat-toolbar>
+  <p class="mt-2">Meeting Details</p>
+  <span class="spacer"></span>
+  <button class="btn close-button" matDialogClose>X</button>
+</mat-toolbar>
+
+
+<div class="container outer-div" *ngIf="!isLoading">
+  <form action="" [formGroup]="meetingDetailsForm">
+
+    <div class="row">
+      <div class="col-4">
+        <label for="">Time Zone</label>
+      </div>
+      <div class="col-8">
+        <mat-select class="form-control" formControlName="Timezone" style="pointer-events: none;">
+          <mat-option *ngFor="let timeZones of timeZones"
+            [value]="timeZones.timezoneName">{{timeZones.timezoneText}}</mat-option>
+        </mat-select>
+      </div>
+
+    </div>
+
+    <div class="row mt-2">
+      <div class="col-4">
+        <label for="">Topic</label>
+      </div>
+      <div class="col-8">
+        <input type="text" class="form-control" formControlName="Topic" readonly>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-4">
+        <label for="">Duration</label>
+      </div>
+      <div class="col-8">
+        <input type="text" class="form-control" formControlName="duration" readonly>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-4">
+        <label for="">Meeting ID</label>
+      </div>
+      <div class="col-8">
+        <input type="text" class="form-control" formControlName="MeetingId" readonly>
+      </div>
+    </div>
+
+    <div class="row mt-2">
+      <div class="col-4">
+        <label for="">Passcode</label>
+      </div>
+      <div class="col-8">
+        <input type="text" class="form-control" formControlName="Password" readonly>
+      </div>
+    </div>
+    <div class="row mt-3">
+
+      <div class="col text-center">
+
+        <button *ngIf="!occurenceId" class="btn btn-sm buttons ms-2" (click)="route()">Edit</button>
+        <button *ngIf="occurenceId" class="btn btn-sm buttons ms-2" (click)="EditOccurence()">Edit</button>
+        <button *ngIf="!occurenceId" class="btn btn-sm buttons ms-2" (click)="openDeleteConfirmation()">Delete</button>
+        <button *ngIf="occurenceId" class="btn btn-sm buttons ms-2" (click)="openDeleteConfirmation()">Delete</button>
+        <button class="btn btn-sm buttons ms-2" (click)="openOutlookWithContent()">Invite</button>
+        <button class="btn btn-sm buttons ms-2" (click)="copyMeetingDetails()">Copy to Clipboard</button>
+        <button class="btn btn-sm buttons ms-2"  (click)="closePopup()">Close</button>
+
+
+      </div>
+
+
+    </div>
+  </form>
+
+</div>
+<div style="display: flex;text-align: center; align-items: center;justify-content: center;" *ngIf="isLoading">
+  <div class="lds-facebook"><div></div><div></div><div></div></div>
+
+</div>

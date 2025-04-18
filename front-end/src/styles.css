@@ -1,0 +1,65 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@font-face {
+  font-family: 'BrighterSans';
+  src: url('./assets/font/MTNBrighterSansRegular.otf') format('opentype');
+  /* Add more src declarations if your font has additional file formats */
+  /* Update 'CustomFont' with the desired font-family name */
+}
+
+* {
+  font-family: 'BrighterSans', sans-serif;
+}
+
+html, body {
+  /* min-width: 0 !important; */
+  font-family: sans-serif;
+  background-color: white !important;
+}
+
+/* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+*{
+    padding: 0px;
+    margin: 0px;
+} */
+
+#zmmtg-root {
+  display: none;
+}
+
+/* :root{
+  --primary:#4F90EE;
+  --secondary:#E5E5E5;
+  --c1:#7F7F7F;
+  --c2: #4C4C4C;
+  --c3 :#E5E5E5;
+} */
+:root{
+  --primary:#FFC728;
+  --secondary:#FFF4BC;
+  --c1:#D4E6FE;
+  --c2:#EDEDED;
+  --c3:#666666;
+  --c4:#808080;
+  --c5:#7B61FF;
+  --black:#000000;
+}
+
+.submit-button{
+  background-color:black;
+  color: white;
+}
+
+
+.video-avatar__avatar-name{
+  white-space: pre-wrap!important;
+  overflow: inherit!important;
+}
+
+
+.preview-video .preview-username{
+  white-space: pre-wrap!important;
+  overflow: inherit!important;
+}
+

@@ -1,0 +1,427 @@
+<div class="container">
+    <div class="outer-div">
+        <div class="top-div">
+            <!-- <div class="row header-component">
+                <div style="display: flex; align-items: center;">
+                    <div class="col-4">
+                        <button class="btn btn-sm" style="cursor: pointer;text-decoration: underline;"
+                            (click)="setProfileNotification(true)">Cancel</button>
+                    </div>
+                    <div class="col-6"><label class="schedulemeeting">Schedule Meeting</label></div>
+                    <div class="col-2 "><button class="btn btn-sm Button"  (click)="save()"
+                            [disabled]="!f.valid">Done</button></div>
+                </div>
+            </div> -->
+
+            <div class="headDiv">
+              <div>
+                <button class="btn btn-sm" style="cursor: pointer;text-decoration: underline;"
+                (click)="setProfileNotification(true)">Cancel</button>
+              </div>
+              <div>
+                <label class="schedulemeeting">Schedule Meeting</label>
+              </div>
+              <div>
+                <button class="btn btn-sm Button"  (click)="save()"
+                            [disabled]="!f.valid">Done</button>
+              </div>
+            </div>
+
+        </div>
+
+        <div class="content">
+            <form action="" [formGroup]="scheduleForm" #f="ngForm">
+                <div *ngIf="!isLoading">
+                    <div class="sub-top">
+                        <div class="row">
+                            <label class="ms-2 label">MEETING TITLE</label>
+                        </div>
+                    </div>
+                    <div class="row p-1 input">
+                        <div class="col-12">
+                            <input type="text" class="form-control" formControlName="meetingTitle"
+                                placeholder="Enter your meeting title here">
+                        </div>
+                        <div style="height: 10px ms-1">
+                            <h6 *ngIf="
+                  scheduleForm.controls['meetingTitle'].invalid &&
+                      (scheduleForm.controls['meetingTitle'].dirty ||
+                      scheduleForm.controls['meetingTitle'].touched)
+                    " style="color: red;font-size: small;" class="mt-1">
+                                Meeting Title is Required
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="sub-top">
+                        <div class="row">
+                            <label class="ms-2 label">DATE & TIME</label>
+                        </div>
+                    </div>
+                    <div class="row p-2 input">
+                        <div class="col-4">
+                            <label class="form-label" for="">Time Zone</label>
+                        </div>
+
+                        <div class="col-8">
+                            <mat-select class="form-control" formControlName="timeZone" style="color: black;" >
+                                <mat-option><input type="text" class="form-control" [(ngModel)]="SearchFilter" (input)="filter()" placeholder="Search" (click)="$event.stopPropagation()"[ngModelOptions]="{standalone: true}" /></mat-option>
+                                <mat-option *ngFor="let timeZones of filteredTimeZones" [value]="timeZones.timezoneName"
+                                    (click)="setTime(timeZones.timezoneName);validation(timeZones.timezoneName)">{{timeZones.timezoneText}}</mat-option>
+                            </mat-select>
+
+                            <!-- <mat-form-field>
+                                <input type="text" matInput [formControl]="searchControl" [matAutocomplete]="auto"
+                                    (click)="showAllOptions()">
+                                <mat-autocomplete #auto="matAutocomplete">
+                                    <mat-option *ngFor="let timeZones of filteredOptions; let i = index"
+                                        [value]="timeZones.timezoneName" (click)="setTime(timeZones.timezoneName)">
+                                        {{timeZones.timezoneText}}
+                                    </mat-option>
+                                </mat-autocomplete>
+                            </mat-form-field> -->
+                        </div>
+                    </div>
+                    <div class="row p-2 input">
+                        <div class="col-4">
+                            <label class="form-label" for="">Start</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="datetime-local" class="form-control" #startDateInput
+                            (change)="dateSelected(startDateInput.value); minitValidation(startDateInput.value)"
+                            (focus)="disableNumberKeys()"
+                            (blur)="enableNumberKeys()"
+                            formControlName="startDate" 
+                            [min]="startTime">
+                        </div>
+
+                    </div>
+                    <div class="row p-2 input">
+                        <div class="col-4">
+                            <label class="form-label" for="">Duration</label>
+                        </div>
+                        <div class="col-4">
+                            <mat-select class="form-control" matTooltip="Select Hour" [matTooltipPosition]="'after'"
+                                formControlName="hour">
+                                <mat-option *ngFor="let Hours of Hours" [value]="Hours.value" (click)="manageMinits(Hours.value)"
+                                    >{{Hours.name}}</mat-option>
+
+                            </mat-select>
+                        </div>
+                        <div class="col-4">
+                            <mat-select class="form-control" formControlName="minutes" matTooltip="Select Minutes"
+                                [matTooltipPosition]="'after'">
+                                <mat-option *ngFor="let minutes of minutes"
+                                    [value]="minutes.value">{{minutes.name}}</mat-option>
+                            </mat-select>
+
+                        </div>
+                    </div>
+
+                    <div class="row p-2 input">
+                        <div class="col-8">
+                            <label class="form-label" for="">Recurring Meeting</label>
+                        </div>
+                        <!-- <div class="col-6"></div> -->
+                        <div class="col-4 text-center">
+                            <input type="checkbox" class="ms-4" (change)="reccuranceMeeting($event)"
+                                formControlName="reccuranceMeeting">
+                        </div>
+                    </div>
+                    <div class="Reccuring-Meeting" *ngIf="reccurance">
+                        <div class="row p-2 input">
+                            <div class="col-4">
+                                <label class="form-label" for="">Recurrence</label>
+                            </div>
+                            <div class="col-4"></div>
+                            <div class="col-4">
+                                <mat-select class="form-control" formControlName="reccuranceType"
+                                    [(ngModel)]="selectedReccuring" matTooltip="Select a recurrence meeting type"
+                                    [matTooltipPosition]="'above'">
+                                    <mat-option *ngFor="let Reccurances of Reccurances" [value]="Reccurances.value"
+                                        (click)="getReccurance(Reccurances.value);calculateDateOnTheBasisOfReccuranceType()">{{Reccurances.name}}</mat-option>
+                                </mat-select>
+                            </div>
+                        </div>
+                        <div class="row p-2 input" *ngIf="Daily">
+                            <div class="flex">
+                                <div class="col-8">
+                                    <label class="form-label" for="">Repeat Every</label>
+                                </div>
+                                <!-- <div class="col-4"></div> -->
+                                <div class="col-4" style="display: flex;">
+                                    <mat-select class="form-control w-75 ms-3" formControlName="repeatInterval"
+                                        [(ngModel)]="selectedDays">
+                                        <mat-option *ngFor="let repeatInterval of repeatInterval"
+                                            [value]="repeatInterval.value"
+                                            (click)="calculateDateAfterDays()">{{repeatInterval.name}}</mat-option>
+
+                                    </mat-select>
+                                    <p class="ms-2 mt-1">days</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row p-2" *ngIf="Weekly">
+                        <div class="row">
+                            <div class="col-6">
+                                <label class="form-label" for="">Repeat Every</label>
+                            </div>
+
+                            <!-- weekly occurance -->
+                            <div class="col-6" style="display: flex; align-items: center;">
+                                <mat-select class="form-control  ms-3" formControlName="repeatIntervalWeekly"
+                                    [(ngModel)]="selectedWeeks">
+                                    <mat-option *ngFor="let repeatIntervalWeekly of repeatIntervalWeekly"
+                                        [value]="repeatIntervalWeekly.value"
+                                        (click)="calculateDateAfterWeeks()">{{repeatIntervalWeekly.name}}</mat-option>
+                                </mat-select>
+                                <p class="ms-2 mt-3">Weeks</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="flex mt-2">
+                                <div class="col-6">
+                                    <label>Occurs on</label>
+                                </div>
+                                <div class="col-6">
+                                    <div>
+                                        <mat-select formControlName="weekly" multiple class="form-control">
+                                            <mat-option *ngFor="let Days of Days"
+                                                [value]="Days.value">{{Days.name}}</mat-option>
+                                        </mat-select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- Monthly Occurance -->
+                    <div class="monthly-occurance" *ngIf="Monthly">
+                        <div class="row p-2">
+                            <div class="col-6">
+                                <label class="form-label" for="">Repeat Every</label>
+                            </div>
+                            <div class="col-6"
+                                style="display: flex; align-items: end;text-align: end;justify-content: end;">
+                                <mat-select class="form-control w-50 ms-3" formControlName="repeatIntervalMonthly"
+                                    [(ngModel)]="selectedMonths">
+                                    <mat-option *ngFor="let repeatInterval of repeatIntervalmonthly"
+                                        [value]="repeatInterval.value"
+                                        (click)="calculateDateAfterMonths()">{{repeatInterval.name}}</mat-option>
+
+                                </mat-select>
+                                <p class="ms-2 mt-3" style="font-size: small;">Months</p>
+                            </div>
+                        </div>
+                        <div class="row p-2 flex">
+                            <div class="col-4">
+                                <label>Occurs on</label>
+                            </div>
+                            <!-- <div class="col-2">
+                        </div> -->
+                            <div class="col-8" style="display: flex; align-items: center;justify-content: end;"
+                                [class.selected-row]="selectedRowIndex ==='day'">
+                                <input type="radio" formControlName="day" name="day" value="day" [(ngModel)]="dayValue"
+                                    (click)="styling(1)">Day
+                                <mat-select class="form-control w-25" formControlName="monthlyOccurance">
+
+                                    <mat-option *ngFor="let monthlyOccurance of monthlyOccurance"
+                                        [value]="monthlyOccurance.value">{{monthlyOccurance.value}}</mat-option>
+
+                                </mat-select>
+                                <label style="font-size: small;">Of the Month</label>
+                            </div>
+
+                        </div>
+                        <div class="row ">
+                            <!-- <div class="col-2"></div> -->
+                            <div class="col" style="display: flex; align-items: center;justify-content: end;"
+                                [class.selected-row]="selectedRowIndex ==='other'">
+                                <input type="radio" class="ms-1" name="day" formControlName="other" value="other"
+                                    (click)="datvalueDefault();styling(2)">Week
+                                <mat-select class="form-control w-25" formControlName="monthly_week">
+                                    <mat-option *ngFor="let monthly_week of monthly_week"
+                                        [value]="monthly_week.value">{{monthly_week.name}}</mat-option>
+                                </mat-select>
+                                <mat-select class="form-control w-25 ms-2" formControlName="monthly_week_day">
+                                    <mat-option *ngFor="let monthly_week_day of monthly_week_day"
+                                        [value]="monthly_week_day.value">{{monthly_week_day.name}}</mat-option>
+                                </mat-select>
+                                <label style="font-size: small;">Of the Month</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-1 p-1" *ngIf="EndDate">
+                        <div style="display: flex;align-items: center;">
+                            <div class="col-6">
+                                <label class="ms-1">End Date</label>
+                            </div>
+                            <!-- <div class="col-4">
+
+                        </div> -->
+                            <div class="col-6">
+                                <!-- <input type="datetime-local" class="form-control" formControlName="endDate" [min]="EndTime"> -->
+                                <input type="date" class="form-control" formControlName="endDate" [min]="EndTime">
+
+                                <!-- <input type="datetime-local" class="form-control" formControlName="endDate"> -->
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="sub-top mt-2">
+                        <div class="row">
+                            <label class="ms-2 label">SECURITY</label>
+                        </div>
+                    </div>
+                    <div class="row p-2 input">
+                        <div class="col">
+                            <label>Require Meeting Passcode<br>
+                                <span style="font-size: x-small;"> Users require the invite link/passcode to join the
+                                    meeting</span>
+                            </label>
+                        </div>
+                            <!-- <label class="switch">
+                            <input type="checkbox" formControlName="requireMeetingPassword">
+                            <span class="slider round"></span>
+                        </label> -->
+                    </div>
+                    <div class="row p-2 input">
+                        <div class="col-6">
+                            <label class="form-label" for="">Passcode</label>
+                        </div>
+                        <!-- <div class="col-4"></div> -->
+                        <div class="col-6 text-center">
+                            <input type="text" class="input-field-text input-field" formControlName="password"
+                                #passwordInput>
+                        </div>
+                    </div>
+
+                    <!-- <div class="row p-2 input">
+                    <div class="col-8">
+                        <label class="form-label" for="">Only Allow Authenticated Users<br></label>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-2">
+                        <label class="switch">
+                            <input type="checkbox" formControlName="athunticatedUser">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div> -->
+
+                    <div class="sub-top">
+                        <div class="row">
+                            <label class="ms-2 label">MEETING OPTIONS</label>
+                        </div>
+                    </div>
+                    <div class="row p-2 input">
+                        <div class="col-8">
+                            <label class="form-label" for="">Host Video On</label>
+                        </div>
+                        <div class="col-4 text-center">
+                            <label class="switch">
+                                <input type="checkbox" formControlName="HostVedio">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row p-2 input">
+                        <div class="col-8">
+                            <label class="form-label">Participant Video On</label>
+                        </div>
+                        <!-- <div class="col-1"></div> -->
+                        <div class="col-4 text-center">
+                            <label class="switch">
+                                <input type="checkbox" formControlName="participantVdio">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row p-2 input">
+                        <div class="col-8">
+                            <label class="form-label">Automatically Record Meeting</label>
+                        </div>
+                        <div class="col-4 text-center">
+                            <label class="switch">
+                                <input type="checkbox"  (change)="enableRecording($event)">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row p-2 input"  *ngIf="enableRecordDiv" id="enableDiv">
+                        <div class="col-8">
+                            <label class="form-label">Recording Location</label>
+                        </div>
+                        <div class="col-4 text-center">
+                            <mat-select class="form-control" formControlName="auto_recording">
+                                    <!-- <mat-option value="local" (click)="setRecordValue('local')" >Local</mat-option> -->
+                                    <mat-option value="cloud" (click)="setRecordValue('cloud')">Cloud</mat-option>
+                                </mat-select>
+                        </div>
+                    </div>
+
+                    <!-- <div class="row p-2 input">
+                    <div class="col-8">
+                        <label class="form-label" for="">Audio Option
+                        </label>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-2">
+                        <label class="switch">
+                            <input type="checkbox" formControlName="audioOption">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div> -->
+                    <!-- <div class="sub-top">
+                    <div class="row">
+                        <label class="ms-2 label">ADVANCED OPTIONS </label>
+                    </div>
+                </div>
+                <div class="row p-2 input">
+                    <div class="col-8">
+                        <label class="form-label" for="">Allow Participants to Join Before Host
+                        </label>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-2">
+                        <label class="switch">
+                            <input type="checkbox" formControlName="joinBeforeHost">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div> -->
+                </div>
+
+                <div *ngIf="isLoading" class="mt-5"
+                    style="display: flex;align-items: center;text-align: center;justify-content: center;">
+                    <div class="lds-roller">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+    </div>
+</div>

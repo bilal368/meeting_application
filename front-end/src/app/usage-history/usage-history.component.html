@@ -1,0 +1,178 @@
+<div style="display: flex;justify-content: center;">
+
+  <div>
+
+    <div>
+      <div style="display: flex;padding-top: 30px;">
+        <div>
+          <mat-icon style="cursor: pointer;" [routerLink]="['/home/meeting-list']">arrow_back</mat-icon>
+        </div>
+        <div>
+          Go back
+        </div>
+      </div>
+
+    </div>
+
+    <div class="outer-div">
+      <div class="usageHistory">
+        <div class="ms-1 dashboardHeadContent" [class.selected]="selectedTab === 'purchaseHistory'"
+          (click)="selectTab('purchaseHistory')">
+          <label>Purchase History</label>
+        </div>
+        <div class="me-1 dashboardHeadContent" [class.selected]="selectedTab === 'usageHistory'"
+          (click)="selectTab('usageHistory')">
+          <label>Usage</label>
+        </div>
+
+      </div>
+      <div>
+        <div class="top-div pt-1">
+          <div class="d-flex mb-2"
+            style="background-color: var(--secondary);border-radius: 20px;display: flex;align-items: center;justify-content: space-between;height: 150px;">
+            <div class="ps-4 pt-3">
+              <p *ngIf="!ActivePlan">
+                <!-- <span style="color: var(--secondary);"><b> Your plan</b></span><br> -->
+                You currently do not have an active plan.<br>
+                <a class="btn btn-sm mt-2 buyButton" href="https://shop.mtn.ng/shop/ict/meetings-plus.html"
+                  target=”_blank”>Buy a plan</a>
+              </p>
+              <p *ngIf="ActivePlan">
+                {{PlanName}}<br>
+                <span>Expires on: {{expireDate}}.</span>
+                <br>
+                <span>{{upcomingplans}}</span><br>
+                <a class="btn btn-sm mt-2 buyButton" href="https://shop.mtn.ng/shop/ict/meetings-plus.html"
+                  target=”_blank”>Buy a plan</a>
+              </p>
+            </div>
+            <div>
+              <div class="text-end me-2">
+                <img src="\assets\calander.png" class="imgStyle" style="height: 80px;width: 80px;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content" *ngIf="usageHistory">
+          <table *ngIf="!noData">
+            <thead>
+              <tr>
+                <!-- <th>Sl.No</th>
+                <th>Date</th>
+                <th>Topic</th>
+                <th>Duration</th> -->
+                <th style="text-align: left;" class="ps-2"></th>
+                <th></th>
+                <th></th>
+                <th style="text-align: end;"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <ng-container *ngFor="let data of meetingHistory; let i = index">
+                <!-- <tr>
+                  <td>{{ i + 1 }}</td>
+                  <td matTooltip="Time Zone : {{data.timezone}}" [matTooltipPosition]="'above'">
+                    {{ data.startTime | date: "dd-MM-yy h:mm a" : "UTC" }} </td>
+                  <td class="overflow-ellipsis" matTooltip="Meeting ID : {{data.meetingId}}"
+                    [matTooltipPosition]="'above'">
+                    {{ data.meetingTopic }}
+                  </td>
+                  <td>{{ data.duration }}</td>
+                </tr> -->
+                <tr style="height: 50px;border-bottom: .5px solid grey;">
+                  <td style="text-align: left;" class="ps-2">
+                    <span *ngIf="data.meetingTopic!='data.meetingTopic'" style="color: black;font-weight: bold;"
+                      matTooltip="Meeting ID : {{data.meetingId}}" [matTooltipPosition]="'above'">{{
+                      data.meetingTopic}}</span><br>
+                    <div class="time">
+                      {{ data.startTime | date: 'mediumDate' }} {{ data.startTime | date: 'shortTime' }}
+                    </div>
+                    <div *ngIf="data.shared_screen_with_speaker_view && data.shared_screen_with_speaker_view.length > 0"
+                      style="display: flex;align-items: center;">
+                      <div>
+                        <button class="btn btn-sm" (click)="getPlayUrl(data.meetingId)" matTooltip="Play Recording"
+                          [matTooltipPosition]="'above'"><mat-icon>play_circle_filled</mat-icon></button><span
+                          style="font-weight: bold;color: black;font-size: small;">Play Recording</span>
+                      </div>
+                      <div *ngIf="data.password!=''" (click)="copyPassword(data.password)" style="cursor: pointer;"
+                        matTooltip="Copy Passcode" [matTooltipPosition]="'above'">
+                        <button class="btn btn-sm ms-3">
+                          <mat-icon>content_copy</mat-icon>
+                        </button><span style="font-weight: bold;color: black;font-size: small;">Copy Passcode</span>
+                      </div>
+                    </div>
+                    <div *ngIf="data.hasRecording==1 && data.shared_screen_with_speaker_view==''">
+                      <button class="btn btn-sm"><mat-icon>hourglass_top</mat-icon></button><span
+                        style="font-weight: bold;color: black;font-size: small;">Recording Processing</span>
+                    </div>
+                    <div *ngIf="data.summary_Details!=null" (click)="openViewSummary(data)" style="cursor: pointer;">
+                      <button class="btn btn-sm" matTooltip="View Summary"
+                        [matTooltipPosition]="'above'"><mat-icon>summarize</mat-icon></button>
+                      <span style="font-weight: bold;color: black;font-size: small;" matTooltip="View Summary"
+                        [matTooltipPosition]="'above'">View Summary</span>
+                    </div>
+                    <div *ngIf="data.SummaryStatus==0 && data.summaryProcess_status ==1"><span
+                        style="font-weight: bold;color: black;font-size: small;" class="ms-1">Summary loading...</span>
+                    </div>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td style="text-align: end;" class="pe-2">
+                    <div class="time">
+                    </div><br>
+                    {{ data.duration }}
+                  </td>
+                </tr>
+              </ng-container>
+            </tbody>
+          </table>
+          <div class="noData" *ngIf="noData">No data to display!</div>
+        </div>
+
+        <div class="content" *ngIf="purchaseHistory">
+          <table *ngIf="!noPurchaseData">
+            <thead>
+              <tr>
+                <th style="text-align: left;"></th>
+                <th style="text-align: left;"></th>
+                <th style="text-align: left;"></th>
+                <th style="text-align: end;"></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let data of convertedPurchaseHistory;let i = index" style="height: 50px;border-bottom: .5px solid grey;">
+                <td style="text-align: left;" class="overflow-ellipsis ps-2">
+                  <span style="color: black;font-weight: bold;">{{ data.bundlePlanName}}</span> <br>
+                  <div class="time" *ngIf="data.BundleStatus!='Refunded'&&data.bundleStartDate">
+                    {{ data.bundleStartDate | date: 'mediumDate'}},<span style="font-style: italic;">{{ data.bundleStartDate | date: 'shortTime'}}</span> - {{ data.bundleExpiryDateAndTIme | date:
+                    'mediumDate'}},<span style="font-style: italic;">{{ data.bundleStartDate | date: 'shortTime'}}</span>
+                  </div>
+                  <div class="time" *ngIf="data.BundleStatus!='Refunded'&&!data.bundleStartDate">
+                    <p>Not started</p>
+                  </div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="text-align: end;" *ngIf="data.BundleStatus=='Active'"><button
+                    class="activeButton me-1">{{data.BundleStatus}}</button></td>
+                <td style="text-align: end;" *ngIf="data.BundleStatus=='Upcoming'"><button
+                    class="inactive text-center me-1">{{data.BundleStatus}}</button>
+                </td>
+                <td style="text-align: end;" *ngIf="data.BundleStatus=='Expired'"><button
+                    class="expired me-1">{{data.BundleStatus}}</button></td>
+                <td style="text-align: end;" *ngIf="data.BundleStatus=='Refunded'"><button
+                    class="refunded me-1">{{data.BundleStatus}}</button></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="noData" *ngIf="noPurchaseData">No data to display!</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>

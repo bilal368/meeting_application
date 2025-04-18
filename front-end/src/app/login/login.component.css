@@ -1,0 +1,399 @@
+.background {
+  /* background: linear-gradient(360deg, rgba(255,255,255,1) 0%, rgba(255,199,40,1) 100%); */
+  background: linear-gradient(180deg, #FFDC7A 39.98%, #FFFFFF 86.29%);
+  height: 100vh;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+input {
+  border: none !important;
+}
+
+.contentDiv {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 400px;
+  width: 800px;
+  border-radius: 32px;
+  overflow: hidden;
+  /* box-shadow: whitesmoke 0px 5px 15px 0px; */
+}
+
+.outerCard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.people {
+  height: 180px;
+  /* width: 450px; */
+  width: 400px;
+}
+
+.innerCardOne {
+  width: 400px;
+  height: 400px;
+  background-color: var(--primary);
+  z-index: 0;
+}
+
+.innerCardTwo {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.welcome {
+  height: 250px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.forgotPassword {
+  /* height: 250px; */
+  padding-left: 20px;
+  padding-right: 20px;
+  /* justify-content: center; */
+  width: 400px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login {
+  /* height: 250px; */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.toolbar {
+  background-color: transparent;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center-image {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  margin-left: -60px;
+}
+
+.joinButtonDiv {
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  padding-top: 68px;
+}
+
+.joinButton {
+  background-color: black;
+  color: white;
+  border-radius: 32px;
+  height: 50px;
+  width: 250px;
+  padding: 10px;
+}
+
+.welcomeSideButton {
+  background-color: white;
+  border-color: lightgray;
+  border-radius: 32px;
+  height: 50px;
+  width: 300px;
+  padding: 7px;
+  margin-top: 10px;
+
+}
+
+
+.signin {
+  margin-top: 10vh;
+  color: white;
+}
+
+.signUp {
+  /* background-color: var(--primary); */
+  border: .5px solid grey;
+  color: black;
+  border-radius: 19px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.login-input {
+  border-radius: 19px;
+  height: 50px
+}
+
+.submit-btn-margin {
+  margin-left: 23vh;
+}
+
+input.ng-invalid.ng-touched {
+  border: red 1px solid;
+}
+
+.meetingButton:disabled {
+  background-color: gray;
+  color: white;
+}
+
+.password {
+  margin-left: 33vh;
+}
+
+.join {
+  background-color: black;
+  color: white;
+  border-radius: 19px;
+}
+
+.meetingButton {
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  width: 100px;
+  padding: 5px;
+}
+
+.iconDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.googleIcon {
+  height: 60px;
+}
+
+.appleIconOne {
+  display: inline-block;
+  overflow: hidden;
+  height: 45px;
+}
+
+.appleIconTwo {
+  height: 45px;
+}
+
+.windowsIcon {
+  height: 45px
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+@media only screen and (max-width: 844px) {
+  .outerCard {
+    display: block;
+  }
+
+  .innerCardOne {
+    width: 400px;
+    height: 100px;
+    background-color: var(--primary);
+    z-index: 0;
+  }
+
+  .innerCardTwo {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .people {
+    display: none;
+  }
+
+  .card {
+    height: 550px;
+    width: 400px;
+    border-radius: 20px;
+    overflow: hidden
+  }
+
+  .joinButtonDiv {
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+  }
+
+
+  .login {
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .joinMeeting {
+    /* height: 250px; */
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .toolbar {
+    padding: 40px;
+  }
+
+  .center-image {
+
+    justify-content: end;
+  }
+
+  .welcome {
+    height: 250px;
+    text-align: center;
+  }
+
+
+
+}
+
+
+.outer-div {
+  border-radius: 20px;
+  margin-top: 5vh;
+  /* margin-left: 10vh; */
+  height: 70vh;
+  background-color: var(--secondary);
+  width: 61vh
+}
+
+.top-div {
+  border-radius: 10px 10px 0px 0px;
+  height: 10vh;
+  background-color: var(--c2);
+  padding: 20px;
+}
+
+
+/* .joinmeeting {
+  font-size: 3vh;
+  font-weight: bolder;
+  margin-top: 7vh;
+  text-align: center;
+} */
+
+.joinMeeting {
+  /* height: 250px; */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.input-field {
+  border-right: 30px;
+  width: 53vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+}
+
+.checkbox-align {
+  display: flex;
+  margin-left: 5vh;
+  margin-top: 1vh;
+  flex-wrap: wrap;
+}
+
+.button-alighn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1vh;
+  flex-wrap: wrap;
+  border-radius: 19px;
+}
+
+.landing-page {
+  padding-top: 10vh;
+}
+
+.forgot-page {
+  padding-top: 15vh;
+}
+
+.errorMessage {
+  color: red;
+  font-size: small;
+  text-decoration: none;
+}
+
+.download {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.footer {
+  background-color: var(--primary);
+  color: white;
+  height: 50px;
+  padding: 10px !important;
+}
+
+
+.containercLASS {
+  background-color: transparent;
+  /* height: 100px; */
+  width: 100%;
+}
+
+.box {
+  width: 100%;
+  height: 95px;
+  background-color: white;
+  /* border:1px solid white; */
+  border-width: 0 0 13px 0;
+  /* margin:1rem auto; */
+  -webkit-border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%;
+  -moz-border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%;
+  border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%;
+}
+
+.updateNotificationDiv {
+  width: 100%;
+  height: 10%;
+  background-color: #fbfbbd;
+}
+
+
+::ng-deep .mat-mdc-snack-bar-container .mat-mdc-button.mat-mdc-snack-bar-action:not(:disabled) {
+  color: red !important;
+  background-color: transparent !important;
+}
+
+::ng-deep .mat-mdc-snack-bar-container {
+  --mdc-snackbar-container-color: whitesmoke !important;
+  --mdc-snackbar-supporting-text-color: black !important;
+}
+
+
+
+.example-full-width mat-error {
+  margin-left: -12px !important;
+}

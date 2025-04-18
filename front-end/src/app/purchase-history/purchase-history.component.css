@@ -1,0 +1,134 @@
+@media only screen and (max-width: 844px) {
+    .outer-div{
+      border-radius: 20px !important;
+      margin-top: 0vh !important;
+      margin-left: 1vh !important;
+      height: 100% !important;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      /* background-color: var(--secondary) !important; */
+      width:95% !important;
+      /* overflow-x: hidden;
+      overflow-y: auto; */
+    }
+  
+    table{
+      font-size: small;
+    }
+  }
+  
+  
+  .outer-div{
+    border-radius: 20px;
+    margin-top: 1vh;
+    margin-left: 10vh;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* background-color: var(--secondary); */
+    width: 80%;
+    /* overflow-x: hidden;
+    overflow-y: auto; */
+  }
+  
+  .top-div {
+    height: 8vh;
+    background-color: var(--c2);
+    padding: 20px;
+  }
+  
+  .content {
+    height: 53vh;
+    overflow-x: hidden;
+    /* padding: 5px; */
+    /* padding-left: 5px;
+      padding-right: 5px;
+      padding-bottom: 5px; */
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+  
+  }
+  
+  .noData {
+    align-items: center;
+    text-align: center;
+    margin-top: 20vh;
+  }
+  
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  
+  th {
+    background-color: var(--c2);
+    text-align: left;
+    /* color: white; */
+    /* padding: 4px; */
+  }
+  
+  td {
+    text-align: left;
+  }
+  tr{
+    border-bottom: .5px solid var(--c2);
+  }
+  
+  /* tr:nth-child(odd) {
+    background-color: var(--c3);
+    color: var(--c1);
+  }
+  
+  tr:nth-child(even) {
+    background-color: var(--c1);
+    color: var(--c3);
+  } */
+  
+  .usageHistory {
+    color: black;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    /* border-radius: 10px 10px 0px 0px; */
+    padding: 20px;
+  }
+  
+  .overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
+  }
+  .activeButton{
+    color: green;
+    border:.5px solid #9999;
+    border-radius: 7px;
+    background-color: white;
+    font-size: smaller;
+  }
+  .inactive{
+    color: #59593c;
+    border:.5px solid #9999;
+    border-radius: 7px;
+    background-color: white;
+    font-size: smaller;
+  }
+  .expired{
+    color: red;
+    border:.5px solid #9999;
+    border-radius: 7px;
+    background-color: white;
+    font-size: smaller;
+  }
+  tr button{
+    width:78px;
+    height: 25px;
+  }
+  .time{
+    font-size: 12px;
+  }
+  .overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
+  }
