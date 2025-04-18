@@ -1,0 +1,5 @@
+[{
+  "packageFamilyName": "4c1b3f25-918d-4c05-a9ce-9ef62c1fa9ae_8wgnd6rsf97wt",
+  "paths": [ "*" ],
+    "excludePaths": [ "/getResetForm*", "/generatePassword*", "/resetPassword*" , "/login*", "/play*"]
+  }]

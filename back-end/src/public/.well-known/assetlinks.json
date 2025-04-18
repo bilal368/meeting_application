@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "ca.MTN.MTNmeetings.android",
+    "sha256_cert_fingerprints":
+    ["4D:EC:BE:01:A2:45:BE:E7:4B:9A:27:2C:E1:46:02:CF:D9:30:7A:C6:A9:91:30:2E:4A:92:7F:70:F0:B0:07:9C"]
+  }
+}
+]

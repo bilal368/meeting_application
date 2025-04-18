@@ -1,0 +1,15 @@
+{
+	"applinks": {
+		"apps": [],
+		"details": [
+		{
+		  "appID": "54VPD89MHT.com.speechlogix.mtn.zoom.ios",
+			 "paths": ["NOT /login/*", "NOT /generatePassword/*","*"]
+		},
+		{
+			"appID": "54VPD89MHT.com.mtn.zoom.meetings.macos",
+			   "paths": ["NOT /login/*","NOT /generatePassword/*,”*”]
+		}
+		]
+		}
+ }

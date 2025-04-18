@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+	{
+ 	   "appID": "54VPD89MHT.com.mtn.zoom.meetings.macos",
+           "paths": ["*"]
+	}
+	]
+    }
+ }

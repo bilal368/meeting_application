@@ -1,0 +1,644 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "REST API",
+    "description": ""
+  },
+  "host": "localhost:3000",
+  "basePath": "/api",
+  "schemes": [
+    "http"
+  ],
+  
+  "paths": {
+    "/bundleupdate": {
+      "post": {
+       "description": "Purchase plan for users<ul><li>email: string - The user's email ID</li><li>bundlePlan: string - The duration of the purchased plan. Options: OneDayPlan, WeeklyPlan, MonthlyPlan</li><li>TransactionId: string - The transaction ID</li><li>firstName: string - The user's first name</li><li>lastName: string - The user's last name</li><li>phone: interger - The user's phone number</li><li>timezone: string - The user's timezone</li></ul>",
+        "parameters": [
+          {
+            "name": "header",
+            "in": "header",
+            "description": "API Key",
+            "required": true,
+            "type": "string",
+            "default": "772403fbfd96ab942fdb89e1706733c1ced1c1d757126c5335cf33fa09331347",
+            "readOnly": true
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "example": "henry"
+                },
+                "lastName": {
+                  "example": "charles"
+                },
+                "phone": {
+                  "example": 919249983227
+                },
+                "timezone": {
+                  "example": "Africa/Algiers"
+                }
+              }
+            }
+          },
+          {
+            "name": "email",
+            "in": "query",
+            "description": "User Email ID",
+            "required": true,
+            "type": "string",
+            "default": "henry@gmail.com"
+          },
+          {
+            "name": "bundlePlan",
+            "in": "query",
+            "description": "Duration of the purchased plan",
+            "required": true,
+            "type": "string",
+            "default": "OneDayPlan",
+            "enum": ["OneDayPlan", "WeeklyPlan", "MonthlyPlan"]
+          },
+          {
+            "name": "MTNTransactionId",
+            "in": "query",
+            "description": "Transaction Id",
+            "required": true,
+            "type": "string",
+            "default": "216165521654"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Purchased successfully",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "string",
+                  "example": true
+                },
+                "message": {
+                  "type": "string",
+                  "example": "Subscription purchased successfully"
+                },
+                "subscription": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer",
+                      "example": 89
+                    },
+                    "Email": {
+                      "type": "string",
+                      "example": "henry@gmail.com"
+                    },
+                    "bundleDurationDays": {
+                      "type": "string",
+                      "example": 1
+                    },
+                    "expiryDays": {
+                      "type": "string",
+                      "example": 7
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "TransactionId already exists",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "string",
+                  "example": false
+                },
+                "error": {
+                  "type": "string",
+                  "example": "TransactionId already exists. Add Bundle cannot be done."
+                }
+                
+              }
+            }
+          },
+          "400": {
+            "description": "TransactionId already exists",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "error:1":{
+                  "example": "First name is required."
+                },
+                "error:2":{
+                  "example": "Last name is required."
+                },
+                "error:3":{
+                  "example": "TransactionId does not exist."
+                },
+                "error:4":{
+                  "example": "First name is too long."
+                },
+                "error:5":{
+                  "example": "Last name is too long."
+                },
+                "error:6": {
+                  "example": "Phone number must be minimum 10 digits and maximum 15 digits and not use with a \"+\" or other non-digit characters."
+                },
+                "error:7":{
+                  "example": "First or last name cannot contain script tags."
+                },
+                "error:8":{
+                  "example": "First or last name cannot contain SQL injection characters."
+                }
+                
+              }
+            }
+          }
+        }
+      }
+    },
+    "/createcustomer": {
+      "post": {
+        "description": "Creates a new user<ul><li>firstname: varchar(50)</li><li>lastname: varchar(50)</li><li>phone: varchar(50)</li><li>email: varchar(50)</li><li>timezone: varchar(50) - stores the time zone of the customer</li><li>userType: interger - 1:Actual User,2:Test User</li></ul>",
+        "parameters": [
+          {
+            "name": "header",
+            "in": "header",
+            "description": "API Key",
+            "required": true,
+            "type": "string",
+            "default": "772403fbfd96ab942fdb89e1706733c1ced1c1d757126c5335cf33fa09331347",
+            "readOnly": true
+        }
+        ,
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "example": "henry"
+                },
+                "lastName": {
+                  "example": "charles"
+                },
+                "phone": {
+                  "example": "919249983227"
+                },
+                "email": {
+                  "example": "henry@gmail.com"
+                },
+                "timezone": {
+                  "example": "Africa/Algiers"
+                },
+                "userType":{
+                  "example":2
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+             "description": "User registered successfully.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "string",
+                  "example": "201 Created"
+                },
+                "ContentType": {
+                  "type": "string",
+                  "example": "application/json"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number",
+                      "example": 235
+                    },
+                    "firstName": {
+                      "type": "string",
+                      "example": "fipi"
+                    },
+                    "lastName": {
+                      "type": "string",
+                      "example": "Khan"
+                    },
+                    "email": {
+                      "type": "string",
+                      "example": "vimep13047@cutefier.com"
+                    },
+                    "phone": {
+                      "type": "string",
+                      "example": "8889997775"
+                    },
+                    "timezone": {
+                      "type": "string",
+                      "example": "Asia/Kolkata"
+                    }
+                  }
+                }
+              },
+              "xml": {
+                "name": "main"
+              }
+            }
+            
+          },
+          "409": {
+           "description": "Email AlreadyExist",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "error": {
+                  "example": "Email and Phone number already exist"
+                }
+              }
+            }
+          },
+          "410": {
+           "description": "Email AlreadyExist",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "error:1": {
+                  "example": "Email already exists"
+                },
+                "error:2": {
+                  "example": "Phone number already exists"
+                }
+              }
+            }
+          },
+          "408": {
+            "description": "Phone Number AlreadyExist",
+             "schema": {
+               "type": "object",
+               "properties": {
+                 "error": {
+                   "example": "User is already suspended"
+                 }
+               }
+             }
+           },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "type": "object",
+              "properties": {
+                
+                "error:1":{
+                  "example": "First name is required."
+                },
+                "error:2":{
+                  "example": "Last name is required."
+                },
+                "error:3":{
+                  "example": "Phone number is required."
+                },
+                "error:4":{
+                  "example": "Invalid email format."
+                },
+                "error:5":{
+                  "example": "First name is too long."
+                },
+                "error:6":{
+                  "example": "Last name is too long."
+                },
+                "error:7": {
+                  "example": "Phone number must be minimum 10 digits and maximum 15 digits and not use with a \"+\" or other non-digit characters."
+                },
+                "error:8":{
+                  "example": "First or last name cannot contain script tags."
+                },
+                "error:9":{
+                  "example": "First or last name cannot contain SQL injection characters."
+                }
+                
+              }
+            }
+          },
+          "502": {
+            "description": "Internal server error",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "error": {
+                  "type": "Server Internal Error",
+                  "example": "Internal server error"
+                }
+              }
+            }
+          }
+
+        }  
+      }
+    },
+    "/suspendcustomer": {
+      "post": {
+        "description": "Removes a user from the application.<ul><li>PhoneNumber: string(11)</li></ul>",
+        "parameters": [
+          {
+            "name": "header",
+            "in": "header",
+            "description": "API Key",
+            "required": true,
+            "type": "string",
+            "default": "772403fbfd96ab942fdb89e1706733c1ced1c1d757126c5335cf33fa09331347",
+            "readOnly": true
+          },
+          {
+            "name": "PhoneNumber",
+            "in": "query",
+            "description": "Phone Number",
+            "required": true,
+            "type": "string",
+            "default": "7778886665"
+          
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "suspended successfully",
+            "schema": {
+              "status": true,
+              "type": "object",
+              "properties": {
+                "message": {
+                  "example": "Customer with Phone Number 9998887776 has been suspended successfully"       
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Phone Number does not exist",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "error:1": {
+                  "type": "string",
+                  "example": "The customer with the provided Phone Number does not exist."
+                },
+                "error:2": {
+                  "type": "string",
+                  "example": "The customer with the provided Phone Number has not logged in yet. Please ensure that the user has successfully logged in before proceeding."
+                },
+                "error:3": {
+                  "type": "string",
+                  "example": "User exists But Already Suspended"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error: Bad Request",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "error": {
+                  "example": "Phone Number is required."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bundlepurchase": {
+      "post": {
+        "description": "Purchase plan for users<ul><li> PhoneNumber: string(11) </li><li>bundleDurationDays: smallint(6) - Duration of the purchased plan</li><li>expirydays: tinyint(1) - If the user opts 1-day plan, the duration of the plan will be 1 day and the expiry time will be 7 days. If the user opts 7-day plan, the duration of the plan will be 7 days and the expiry time will be 0 days.</li></ul>",
+        "parameters": [
+          {
+            "name": "header",
+            "in": "header",
+            "description": "API Key",
+            "required": true,
+            "type": "string",
+            "default": "772403fbfd96ab942fdb89e1706733c1ced1c1d757126c5335cf33fa09331347",
+            "readOnly": true
+          },
+          {
+            "name": "email",
+            "in": "query",
+            "description": "Email id",
+            "required": true,
+            "type": "string",
+            "default": "example@gmail.com"
+          },
+          {
+            "name": "bundlePlan",
+            "in": "query",
+            "description": "Duration of the purchased plan",
+            "required": true,
+            "type": "string",
+            "default": "OneDayPlan",
+            "enum": ["OneDayPlan", "WeeklyPlan", "MonthlyPlan"]
+          },
+          {
+            "name": "TransactionId",
+            "in": "query",
+            "description": "Transaction Id",
+            "required": true,
+            "type": "string",
+            "default": "216165521654"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Purchased successfully",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "string",
+                  "example": "200 Purchased successfully"
+                },
+                "message": {
+                  "type": "string",
+                  "example": "Subscription purchased successfully"
+                },
+                "subscription": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer",
+                      "example": 89
+                    },
+                    "Phone Number": {
+                      "type": "string",
+                      "example": "9997778885"
+                    },
+                    "bundleDurationDays": {
+                      "type": "string",
+                      "example": "1"
+                    },
+                    "expiryDays": {
+                      "type": "string",
+                      "example": "7"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Phone Number does not exist",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "error": {
+                  "type": "string",
+                  "example": "The provided Phone Number does not exist"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/accountbalance": {
+      "post": {
+        "description": "To know the expiry date of the purchased plan  <ul><li>PhoneNumber: string(11)</li></ul>",
+        "parameters": [
+          {
+            "name": "header",
+            "in": "header",
+            "description": "API Key",
+            "required": true,
+            "type": "string",
+            "default": "772403fbfd96ab942fdb89e1706733c1ced1c1d757126c5335cf33fa09331347",
+            "readOnly": true
+        },
+          {
+            "name": "email",
+            "in": "query",
+            "type": "string",
+            "default":"example@gmail.com"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "string",
+                  "example": "ture"
+                },
+                "Phone Number": {
+                  "type": "string",
+                  "example": "8889997775"
+                },
+                "ExpiryDateTime": {
+                  "type": "string",
+                  "example": "26-05-2023 12:05:00"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Phone Number does not exist",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "error": {
+                  "type": "string",
+                  "example": "The customer with the provided Phone Number does not exist."
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Error: Payment Required",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "User has no Balance"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/accountsearch": {
+      "post": {
+        "description":"Searches for a user based on the provided criteria.<ul><li>Key: Select the type of search ('email' or 'PhoneNumber').</li><li>Value: Enter the email address or phone number based on the selected key.<ul><li>If Key is 'email', enter an email address (e.g., 'example@example.com').</li><li>If Key is 'PhoneNumber', enter a phone number (e.g., '8889997775').</li></ul></li></ul>",
+        "parameters": [
+          {
+            "name": "header",
+            "in": "header",
+            "description": "API Key",
+            "required": true,
+            "type": "string",
+            "default": "772403fbfd96ab942fdb89e1706733c1ced1c1d757126c5335cf33fa09331347",
+            "readOnly": true
+          },
+          {
+            "name": "Key",
+            "in": "query",
+            "description": "Select the type of search",
+            "required": true,
+            "type": "string",
+            "enum": ["email", "PhoneNumber"],
+            "default": "PhoneNumber"
+          },
+          {
+            "name": "Value",
+            "in": "query",
+            "type": "string",
+            "description": "Enter the email address or phone number based on the selected key",
+            "default": "8889997775",
+            "example": {
+              "email": "example@example.com",
+              "PhoneNumber": "8889997775"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "string",
+                  "example": "ture"
+                },
+                "Phone Number": {
+                  "type": "string",
+                  "example": "8888555213"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Phone Number or Email not found",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "error": {
+                  "type": "string",
+                  "example": "The customer with the provided phone number does not exist."
+                }
+              }
+            }
+          }
+        }
+      }
+    }      
+  }
+}

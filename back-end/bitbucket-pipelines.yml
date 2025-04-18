@@ -1,0 +1,85 @@
+pipelines:
+  branches:
+    '{Development,develop,dev/*}':
+      - step:
+          name: Build and push Docker image
+          image: node:16.19.0-bullseye
+          services:
+            - docker
+          caches:
+            - docker
+          size: 2x
+          script:
+            - docker build -t mtn-zoom:dev .
+            - docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
+            - docker tag mtn-zoom:dev $DOCKERHUB_USERNAME/mtn-zoom:dev
+            - docker push $DOCKERHUB_USERNAME/mtn-zoom:dev
+    '{master,main,release/*,hotfix/*}':
+      - step:
+          name: Build and push Docker image
+          image: node:16.19.0-bullseye
+          services:
+            - docker
+          caches:
+            - docker
+          size: 2x
+          script:
+            - |
+              if [[ "$BITBUCKET_BRANCH" == "master" ]]; then
+                DOCKER_TAG=latest
+              elif [[ "$BITBUCKET_BRANCH" == "main" ]]; then
+                DOCKER_TAG=latest
+              elif [[ "$BITBUCKET_BRANCH" == release/* ]]; then
+                DOCKER_TAG=${BITBUCKET_BRANCH#release/}
+              elif [[ "$BITBUCKET_BRANCH" == hotfix/* ]]; then
+                DOCKER_TAG=${BITBUCKET_BRANCH#hotfix/}
+              else
+                DOCKER_TAG=$BITBUCKET_BRANCH
+              fi
+            - docker build -t mtn-zoom:$DOCKER_TAG .
+            - docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
+            - docker tag mtn-zoom:$DOCKER_TAG $DOCKERHUB_USERNAME/mtn-zoom:$DOCKER_TAG
+            - docker push $DOCKERHUB_USERNAME/mtn-zoom:$DOCKER_TAG
+    'development-mvc':  # Existing section for development-mvc branch
+      - step:
+          name: Build and push Docker image for development-mvc
+          image: node:16.19.0-bullseye
+          services:
+            - docker
+          caches:
+            - docker
+          size: 2x
+          script:
+            - docker build -t mtn-zoom:development-mvc .
+            - docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
+            - docker tag mtn-zoom:development-mvc $DOCKERHUB_USERNAME/mtn-zoom:development-mvc
+            - docker push $DOCKERHUB_USERNAME/mtn-zoom:development-mvc
+    'hetznerdevelopment':  # New section for hetznerdevelopment branch
+      - step:
+          name: Build and push Docker image for hetznerdevelopment
+          image: node:16.19.0-bullseye
+          services:
+            - docker
+          caches:
+            - docker
+          size: 2x
+          script:
+            - docker build -t mtn-zoom:hetznerdevelopment .
+            - docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
+            - docker tag mtn-zoom:hetznerdevelopment $DOCKERHUB_USERNAME/mtn-zoom:hetznerdevelopment
+            - docker push $DOCKERHUB_USERNAME/mtn-zoom:hetznerdevelopment
+  tags:
+    "*":
+      - step:
+          name: Build and push Docker image
+          image: node:16.19.0-bullseye
+          services:
+            - docker
+          caches:
+            - docker
+          size: 2x
+          script:
+            - docker build -t mtn-zoom:${BITBUCKET_TAG} .
+            - docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
+            - docker tag mtn-zoom:${BITBUCKET_TAG} $DOCKERHUB_USERNAME/mtn-zoom:${BITBUCKET_TAG}
+            - docker push $DOCKERHUB_USERNAME/mtn-zoom:${BITBUCKET_TAG}

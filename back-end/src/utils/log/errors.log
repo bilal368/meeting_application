@@ -1,0 +1,2761 @@
+[2023-09-05T17:48:25.066] [ERROR] app.js - ReferenceError: loginIduserff is not defined
+    at D:\fork\mtn-zoom-webportal-backend\src\controller\userLogin.js:36:56
+    at Query.<anonymous> (D:\fork\mtn-zoom-webportal-backend\src\models\mtnDB.js:752:3)
+    at Query.<anonymous> (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\Connection.js:488:16)
+    at Sequence.end (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Query.js:149:8)
+    at Query.EofPacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Query.js:133:8)
+    at Protocol._parsePacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+[2023-09-05T17:50:21.673] [ERROR] app.js - ReferenceError: loginIduserff is not defined
+    at D:\fork\mtn-zoom-webportal-backend\src\controller\userLogin.js:36:56
+    at Query.<anonymous> (D:\fork\mtn-zoom-webportal-backend\src\models\mtnDB.js:752:3)
+    at Query.<anonymous> (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\Connection.js:488:16)
+    at Sequence.end (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Query.js:149:8)
+    at Query.EofPacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Query.js:133:8)
+    at Protocol._parsePacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+[2023-09-05T17:52:16.915] [ERROR] app.js - 44444 ReferenceError: loginIduserff is not defined
+    at D:\fork\mtn-zoom-webportal-backend\src\controller\userLogin.js:36:56
+    at Query.<anonymous> (D:\fork\mtn-zoom-webportal-backend\src\models\mtnDB.js:752:3)
+    at Query.<anonymous> (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\Connection.js:488:16)
+    at Sequence.end (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Query.js:149:8)
+    at Query.EofPacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Query.js:133:8)
+    at Protocol._parsePacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+[2023-09-05T18:00:38.493] [ERROR] app.js - 44444 ReferenceError: loginIduserff is not defined
+    at D:\fork\mtn-zoom-webportal-backend\src\controller\userLogin.js:38:56
+    at Query.<anonymous> (D:\fork\mtn-zoom-webportal-backend\src\models\mtnDB.js:752:3)
+    at Query.<anonymous> (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\Connection.js:488:16)
+    at Sequence.end (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Query.js:149:8)
+    at Query.EofPacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Query.js:133:8)
+    at Protocol._parsePacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+[2023-09-05T18:00:52.514] [ERROR] app.js - 44444 ReferenceError: loginIduserff is not defined
+    at D:\fork\mtn-zoom-webportal-backend\src\controller\userLogin.js:38:56
+    at Query.<anonymous> (D:\fork\mtn-zoom-webportal-backend\src\models\mtnDB.js:752:3)
+    at Query.<anonymous> (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\Connection.js:488:16)
+    at Sequence.end (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Query.js:149:8)
+    at Query.EofPacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Query.js:133:8)
+    at Protocol._parsePacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+[2023-09-05T18:07:11.344] [ERROR] app.js - 45554 ReferenceError: loginIduserff is not defined
+    at D:\fork\mtn-zoom-webportal-backend\src\controller\userLogin.js:38:56
+    at Query.<anonymous> (D:\fork\mtn-zoom-webportal-backend\src\models\mtnDB.js:752:3)
+    at Query.<anonymous> (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\Connection.js:488:16)
+    at Sequence.end (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Query.js:149:8)
+    at Query.EofPacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Query.js:133:8)
+    at Protocol._parsePacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+[2023-09-05T18:08:29.405] [ERROR] app.js - 45554 ReferenceError: loginIduserff is not defined
+    at D:\fork\mtn-zoom-webportal-backend\src\controller\userLogin.js:38:56
+    at Query.<anonymous> (D:\fork\mtn-zoom-webportal-backend\src\models\mtnDB.js:752:3)
+    at Query.<anonymous> (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\Connection.js:488:16)
+    at Sequence.end (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Query.js:149:8)
+    at Query.EofPacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Query.js:133:8)
+    at Protocol._parsePacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+[2023-09-05T18:11:19.540] [ERROR] app.js - 45554 ReferenceError: loginIduseree is not defined
+    at D:\fork\mtn-zoom-webportal-backend\src\controller\userLogin.js:38:56
+    at Query.<anonymous> (D:\fork\mtn-zoom-webportal-backend\src\models\mtnDB.js:752:3)
+    at Query.<anonymous> (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\Connection.js:488:16)
+    at Sequence.end (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Query.js:149:8)
+    at Query.EofPacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Query.js:133:8)
+    at Protocol._parsePacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+[2023-09-05T18:13:05.582] [INFO] db.js - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjkzOTE3NzkwNTgwLCJpYXQiOjE2OTM5MTc3ODV9.naQOR_SdhPjriYUuprbt83oLp_DwFDUGC1E2xS6a0GA
+[2023-09-05T18:13:05.585] [INFO] db.js - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjkzOTE3NzkwNTgzLCJpYXQiOjE2OTM5MTc3ODV9.8NgJJjj9zZ4hAkU7dDRRFFGaNVxdEWGEG80CzCqwg5s
+[2023-09-05T18:13:05.592] [INFO] app.js - Zoom app listening on port 3000
+[2023-09-05T18:13:07.215] [INFO] db.js - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjkzOTE3NzkyMjA2LCJpYXQiOjE2OTM5MTc3ODd9.k-1fLNHx7BqlgFZcDV377K_Np4ut1VSe11SxPBO64Tk
+[2023-09-05T18:13:07.223] [INFO] db.js - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjkzOTE3NzkyMjE2LCJpYXQiOjE2OTM5MTc3ODd9.DcZwqqs0_mppGIVLflnk3QXdKFsZQf1zVt9KeJ2zrz4
+[2023-09-05T18:13:07.228] [INFO] app.js - Zoom app listening on port 3000
+[2023-09-05T18:13:10.145] [INFO] app.js - body: {
+  email: 'ajil@speechlogix.com',
+  password: 'Mtnzoom@143',
+  firstName: 'Ajil'
+}
+[2023-09-05T18:13:10.690] [ERROR] app.js - 45554 ReferenceError: loginIduseree is not defined
+    at D:\fork\mtn-zoom-webportal-backend\src\controller\userLogin.js:38:56
+    at Query.<anonymous> (D:\fork\mtn-zoom-webportal-backend\src\models\mtnDB.js:752:3)
+    at Query.<anonymous> (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\Connection.js:488:16)
+    at Sequence.end (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Query.js:149:8)
+    at Query.EofPacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Query.js:133:8)
+    at Protocol._parsePacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+[2023-09-05T18:14:00.244] [INFO] db.js - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjkzOTE3ODQ1MjQyLCJpYXQiOjE2OTM5MTc4NDB9.EkjOFtNgZZ04055-FYjJFxKj02CadhUF5I58Tc2fLsY
+[2023-09-05T18:14:00.250] [INFO] db.js - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjkzOTE3ODQ1MjQ2LCJpYXQiOjE2OTM5MTc4NDB9.w2pK7iyL3SWID4bhxNi9eVQWfgt3zX-CPgyWqAuZfTA
+[2023-09-05T18:14:00.260] [INFO] app.js - Zoom app listening on port 3000
+[2023-09-05T18:14:33.436] [INFO] db.js - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjkzOTE3ODc4NDMzLCJpYXQiOjE2OTM5MTc4NzN9.pXvzRokfLz-BiBhKDy8M8R6z5b6HO5vs7f_4jDHakc0
+[2023-09-05T18:14:33.440] [INFO] db.js - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjkzOTE3ODc4NDM4LCJpYXQiOjE2OTM5MTc4NzN9.B3l_YmqsPgaCzxZ6ftGuifXZqGdhnXoS_kyQMBsNf1w
+[2023-09-05T18:14:33.444] [INFO] app.js - Zoom app listening on port 3000
+[2023-09-05T18:14:34.776] [INFO] db.js - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjkzOTE3ODc5Nzc0LCJpYXQiOjE2OTM5MTc4NzR9.7vRPz70bV4hdCCtRC1DAiF1ouCNP9aopnjw2UjjfON4
+[2023-09-05T18:14:34.780] [INFO] db.js - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjkzOTE3ODc5Nzc3LCJpYXQiOjE2OTM5MTc4NzR9.B7NOEyMWIaGxrZH4O_Pl1hcQEVnL8-RtOHj6V1SRFJc
+[2023-09-05T18:14:34.784] [INFO] app.js - Zoom app listening on port 3000
+[2023-09-05T18:14:40.590] [INFO] db.js - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjkzOTE3ODg1NTg2LCJpYXQiOjE2OTM5MTc4ODB9.AU3tinyGic50vc9UMtuOQr09wRp2sLR9GR_jB5nbvfU
+[2023-09-05T18:14:40.594] [INFO] db.js - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjkzOTE3ODg1NTkyLCJpYXQiOjE2OTM5MTc4ODB9.mV5TIuDaMmIg15OdJizVJyg1aUyOErCcvrxWsBUdDaA
+[2023-09-05T18:14:40.610] [INFO] app.js - Zoom app listening on port 3000
+[2023-09-05T18:14:45.266] [INFO] app.js - body: {
+  email: 'ajil@speechlogix.com',
+  password: 'Mtnzoom@143',
+  firstName: 'Ajil'
+}
+[2023-09-05T18:14:45.795] [ERROR] app.js - 45554 ReferenceError: loginIduseree is not defined
+    at D:\fork\mtn-zoom-webportal-backend\src\controller\userLogin.js:38:56
+    at Query.<anonymous> (D:\fork\mtn-zoom-webportal-backend\src\models\mtnDB.js:752:3)
+    at Query.<anonymous> (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\Connection.js:488:16)
+    at Sequence.end (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Query.js:149:8)
+    at Query.EofPacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Query.js:133:8)
+    at Protocol._parsePacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+[2023-09-05T18:53:33.267] [ERROR] app.js - 45554 ReferenceError: loginIduseree is not defined
+    at D:\fork\mtn-zoom-webportal-backend\src\controller\userLogin.js:36:56
+    at Query.<anonymous> (D:\fork\mtn-zoom-webportal-backend\src\models\mtnDB.js:752:3)
+    at Query.<anonymous> (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Query._callback (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\Connection.js:488:16)
+    at Sequence.end (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Query._handleFinalResultPacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Query.js:149:8)
+    at Query.EofPacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\sequences\Query.js:133:8)
+    at Protocol._parsePacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\fork\mtn-zoom-webportal-backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+[2023-09-06T10:04:50.588] [ERROR] app.js - TypeError: Cannot read properties of undefined (reading 'timezone')
+    at exports.instanMeeting (D:\fork\mtn-zoom-webportal-backend\src\controller\instantMeeting.js:13:42)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:47:12)
+[2023-09-06T10:05:24.415] [ERROR] app.js - TypeError: Cannot read properties of undefined (reading 'timezone')
+    at exports.instanMeeting (D:\fork\mtn-zoom-webportal-backend\src\controller\instantMeeting.js:13:42)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:47:12)
+[2023-09-06T10:05:40.446] [ERROR] app.js - TypeError: Cannot read properties of undefined (reading 'timezone')
+    at exports.instanMeeting (D:\fork\mtn-zoom-webportal-backend\src\controller\instantMeeting.js:13:42)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:47:12)
+[2023-09-06T11:13:24.969] [ERROR] app.js - TypeError: Cannot read properties of undefined (reading 'timezone')
+    at exports.instanMeeting (D:\fork\mtn-zoom-webportal-backend\src\controller\instantMeeting.js:13:42)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:47:12)
+[2023-09-06T11:13:45.508] [ERROR] app.js - TypeError: Cannot read properties of undefined (reading 'timezone')
+    at exports.instanMeeting (D:\fork\mtn-zoom-webportal-backend\src\controller\instantMeeting.js:13:42)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:47:12)
+[2023-09-06T11:13:52.353] [ERROR] app.js - TypeError: Cannot read properties of undefined (reading 'timezone')
+    at exports.instanMeeting (D:\fork\mtn-zoom-webportal-backend\src\controller\instantMeeting.js:13:42)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:47:12)
+[2023-09-06T11:15:13.979] [ERROR] app.js - ReferenceError: body is not defined
+    at exports.instanMeeting (D:\fork\mtn-zoom-webportal-backend\src\controller\instantMeeting.js:12:21)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:47:12)
+[2023-09-06T14:26:02.785] [ERROR] db.js - ReferenceError: validator is not defined
+    at exports.createcustomer (D:\fork\mtn-zoom-webportal-backend\src\controller\endpoints.js:31:121)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at auth (D:\fork\mtn-zoom-webportal-backend\src\auth\middleware.js:22:9)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:346:12)
+[2023-09-06T14:26:11.698] [ERROR] db.js - ReferenceError: validator is not defined
+    at exports.createcustomer (D:\fork\mtn-zoom-webportal-backend\src\controller\endpoints.js:31:121)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at auth (D:\fork\mtn-zoom-webportal-backend\src\auth\middleware.js:22:9)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:346:12)
+[2023-09-06T14:27:31.825] [ERROR] db.js - ReferenceError: validator is not defined
+    at exports.createcustomer (D:\fork\mtn-zoom-webportal-backend\src\controller\endpoints.js:34:121)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at auth (D:\fork\mtn-zoom-webportal-backend\src\auth\middleware.js:22:9)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:346:12)
+[2023-09-07T17:17:48.806] [ERROR] app.js - Error: Request failed with status code 400
+    at createError (D:\fork\mtn-zoom-webportal-backend\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (D:\fork\mtn-zoom-webportal-backend\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (D:\fork\mtn-zoom-webportal-backend\node_modules\axios\lib\adapters\http.js:322:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1376:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjk0MDg3MjczMTAxLCJpYXQiOjE2OTQwODcyNjh9.pJdJ7PDTK5E7PXFZb3cXp2QeBKjvQ45xgG55Xz1AqJo',
+      'User-Agent': 'axios/0.26.1'
+    },
+    method: 'delete',
+    url: 'https://api.zoom.us/v2/meetings/undefined',
+    data: undefined
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: true,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: true,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: false,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: 0,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: true,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'api.zoom.us',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 9,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'api.zoom.us',
+      _closeAfterHandlingError: false,
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      timeout: 5000,
+      parser: null,
+      _httpMessage: null,
+      [Symbol(alpncallback)]: null,
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: -1,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: 5000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 37736,
+        _onTimeout: [Function: bound ],
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 86,
+        [Symbol(triggerId)]: 84
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 1,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object]
+    },
+    _header: 'DELETE /v2/meetings/undefined HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjk0MDg3MjczMTAxLCJpYXQiOjE2OTQwODcyNjh9.pJdJ7PDTK5E7PXFZb3cXp2QeBKjvQ45xgG55Xz1AqJo\r\n' +
+      'User-Agent: axios/0.26.1\r\n' +
+      'Host: api.zoom.us\r\n' +
+      'Connection: keep-alive\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype] {},
+      freeSockets: [Object: null prototype],
+      keepAliveMsecs: 1000,
+      keepAlive: true,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      maxCachedSessions: 100,
+      _sessionCache: [Object],
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'DELETE',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    joinDuplicateHeaders: undefined,
+    path: '/v2/meetings/undefined',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: null,
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 400,
+      statusMessage: 'Bad Request',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      responseUrl: 'https://api.zoom.us/v2/meetings/undefined',
+      redirects: [],
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 70,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'api.zoom.us',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState],
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 0,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'https://api.zoom.us/v2/meetings/undefined',
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      authorization: [Array],
+      'user-agent': [Array],
+      host: [Array]
+    },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 16384,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  response: {
+    status: 400,
+    statusText: 'Bad Request',
+    headers: {
+      date: 'Thu, 07 Sep 2023 11:47:48 GMT',
+      'content-type': 'application/json;charset=UTF-8',
+      'content-length': '44',
+      connection: 'keep-alive',
+      'x-zm-trackingid': 'v=2.0;clid=us06;rid=WEB_d530c02f2109ed89d9309767ef34ead8',
+      'x-content-type-options': 'nosniff',
+      'cache-control': 'no-cache, no-store, must-revalidate, no-transform',
+      pragma: 'no-cache',
+      expires: 'Thu, 01 Jan 1970 00:00:00 GMT',
+      'set-cookie': [Array],
+      vary: 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers',
+      'x-ratelimit-limit': '999999999',
+      'x-ratelimit-remaining': '999998381',
+      'x-zm-zoneid': 'VA2',
+      'cf-cache-status': 'DYNAMIC',
+      'report-to': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=mcCoJw9puqhAO7XQGnDi63D%2BdllNw159cQiEu9UqvCJazAujh4HeQHr%2F9AqVxA6IiA4mPY%2BIv8UjgN194BscTs7sLgOVnYGGmRyVxnedAYKJBw9uYjKOjK0weyPy"}],"group":"cf-nel","max_age":604800}',
+      nel: '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}',
+      server: 'cloudflare',
+      'cf-ray': '802eb810b8c0413d-BOM',
+      'alt-svc': 'h3=":443"; ma=86400'
+    },
+    config: {
+      transitional: [Object],
+      adapter: [Function: httpAdapter],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus],
+      headers: [Object],
+      method: 'delete',
+      url: 'https://api.zoom.us/v2/meetings/undefined',
+      data: undefined
+    },
+    request: <ref *1> ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      socket: [TLSSocket],
+      _header: 'DELETE /v2/meetings/undefined HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjk0MDg3MjczMTAxLCJpYXQiOjE2OTQwODcyNjh9.pJdJ7PDTK5E7PXFZb3cXp2QeBKjvQ45xgG55Xz1AqJo\r\n' +
+        'User-Agent: axios/0.26.1\r\n' +
+        'Host: api.zoom.us\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'DELETE',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/v2/meetings/undefined',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'api.zoom.us',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 16384,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    data: { code: 300, message: 'Invalid meeting id.' }
+  },
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+[2023-09-07T17:19:20.628] [ERROR] app.js - Error: Request failed with status code 400
+    at createError (D:\fork\mtn-zoom-webportal-backend\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (D:\fork\mtn-zoom-webportal-backend\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (D:\fork\mtn-zoom-webportal-backend\node_modules\axios\lib\adapters\http.js:322:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1376:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjk0MDg3MzY0OTQ4LCJpYXQiOjE2OTQwODczNTl9.vyUNjYhnV3hAtEl2z5xGlAoGg-b-TcjuIVkutDZpBzE',
+      'User-Agent': 'axios/0.26.1'
+    },
+    method: 'delete',
+    url: 'https://api.zoom.us/v2/meetings/undefined',
+    data: undefined
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: true,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: true,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: false,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: 0,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: true,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'api.zoom.us',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 9,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'api.zoom.us',
+      _closeAfterHandlingError: false,
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      timeout: 5000,
+      parser: null,
+      _httpMessage: null,
+      [Symbol(alpncallback)]: null,
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: -1,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: 5000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 7829,
+        _onTimeout: [Function: bound ],
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 86,
+        [Symbol(triggerId)]: 84
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 1,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object]
+    },
+    _header: 'DELETE /v2/meetings/undefined HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjk0MDg3MzY0OTQ4LCJpYXQiOjE2OTQwODczNTl9.vyUNjYhnV3hAtEl2z5xGlAoGg-b-TcjuIVkutDZpBzE\r\n' +
+      'User-Agent: axios/0.26.1\r\n' +
+      'Host: api.zoom.us\r\n' +
+      'Connection: keep-alive\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype] {},
+      freeSockets: [Object: null prototype],
+      keepAliveMsecs: 1000,
+      keepAlive: true,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      maxCachedSessions: 100,
+      _sessionCache: [Object],
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'DELETE',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    joinDuplicateHeaders: undefined,
+    path: '/v2/meetings/undefined',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: null,
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 400,
+      statusMessage: 'Bad Request',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      responseUrl: 'https://api.zoom.us/v2/meetings/undefined',
+      redirects: [],
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 70,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'api.zoom.us',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState],
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 0,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'https://api.zoom.us/v2/meetings/undefined',
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      authorization: [Array],
+      'user-agent': [Array],
+      host: [Array]
+    },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 16384,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  response: {
+    status: 400,
+    statusText: 'Bad Request',
+    headers: {
+      date: 'Thu, 07 Sep 2023 11:49:20 GMT',
+      'content-type': 'application/json;charset=UTF-8',
+      'content-length': '44',
+      connection: 'keep-alive',
+      'x-zm-trackingid': 'v=2.0;clid=us06;rid=WEB_caed856a57dfbe60f0c879a63c65ef57',
+      'x-content-type-options': 'nosniff',
+      'cache-control': 'no-cache, no-store, must-revalidate, no-transform',
+      pragma: 'no-cache',
+      expires: 'Thu, 01 Jan 1970 00:00:00 GMT',
+      'set-cookie': [Array],
+      vary: 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers',
+      'x-ratelimit-limit': '999999999',
+      'x-ratelimit-remaining': '999998371',
+      'x-zm-zoneid': 'VA2',
+      'cf-cache-status': 'DYNAMIC',
+      'report-to': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=2mOWPK4dcxOHwkW2%2B3onW92iY6ea9Sjg2GZY80w%2BwpZycfbX7CMxolLRVSI30a6KVqqKCm37eY%2BjFGoZmI3FSSXasaLOEgF7Sm%2F2dtnEcmX4arPnDGKX9wpFh0ns"}],"group":"cf-nel","max_age":604800}',
+      nel: '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}',
+      server: 'cloudflare',
+      'cf-ray': '802eba4eca6a3b0a-BOM',
+      'alt-svc': 'h3=":443"; ma=86400'
+    },
+    config: {
+      transitional: [Object],
+      adapter: [Function: httpAdapter],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus],
+      headers: [Object],
+      method: 'delete',
+      url: 'https://api.zoom.us/v2/meetings/undefined',
+      data: undefined
+    },
+    request: <ref *1> ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      socket: [TLSSocket],
+      _header: 'DELETE /v2/meetings/undefined HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjk0MDg3MzY0OTQ4LCJpYXQiOjE2OTQwODczNTl9.vyUNjYhnV3hAtEl2z5xGlAoGg-b-TcjuIVkutDZpBzE\r\n' +
+        'User-Agent: axios/0.26.1\r\n' +
+        'Host: api.zoom.us\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'DELETE',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/v2/meetings/undefined',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'api.zoom.us',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 16384,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    data: { code: 300, message: 'Invalid meeting id.' }
+  },
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+[2023-09-07T17:20:14.483] [ERROR] app.js - Error: Request failed with status code 400
+    at createError (D:\fork\mtn-zoom-webportal-backend\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (D:\fork\mtn-zoom-webportal-backend\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (D:\fork\mtn-zoom-webportal-backend\node_modules\axios\lib\adapters\http.js:322:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1376:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjk0MDg3NDE5MDk4LCJpYXQiOjE2OTQwODc0MTR9.bpUITakGrcn0HQ9ZRzFM0R6n4rQH5PbD557jp7kENPk',
+      'User-Agent': 'axios/0.26.1'
+    },
+    method: 'delete',
+    url: 'https://api.zoom.us/v2/meetings/undefined',
+    data: undefined
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: true,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: true,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: false,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: 0,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: true,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'api.zoom.us',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 9,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'api.zoom.us',
+      _closeAfterHandlingError: false,
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      timeout: 5000,
+      parser: null,
+      _httpMessage: null,
+      [Symbol(alpncallback)]: null,
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: -1,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: 5000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 61685,
+        _onTimeout: [Function: bound ],
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 137,
+        [Symbol(triggerId)]: 135
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 1,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object]
+    },
+    _header: 'DELETE /v2/meetings/undefined HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjk0MDg3NDE5MDk4LCJpYXQiOjE2OTQwODc0MTR9.bpUITakGrcn0HQ9ZRzFM0R6n4rQH5PbD557jp7kENPk\r\n' +
+      'User-Agent: axios/0.26.1\r\n' +
+      'Host: api.zoom.us\r\n' +
+      'Connection: keep-alive\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype] {},
+      freeSockets: [Object: null prototype],
+      keepAliveMsecs: 1000,
+      keepAlive: true,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      maxCachedSessions: 100,
+      _sessionCache: [Object],
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'DELETE',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    joinDuplicateHeaders: undefined,
+    path: '/v2/meetings/undefined',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: null,
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 400,
+      statusMessage: 'Bad Request',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      responseUrl: 'https://api.zoom.us/v2/meetings/undefined',
+      redirects: [],
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 74,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'api.zoom.us',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState],
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 0,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'https://api.zoom.us/v2/meetings/undefined',
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      authorization: [Array],
+      'user-agent': [Array],
+      host: [Array]
+    },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 16384,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  response: {
+    status: 400,
+    statusText: 'Bad Request',
+    headers: {
+      date: 'Thu, 07 Sep 2023 11:50:13 GMT',
+      'content-type': 'application/json;charset=UTF-8',
+      'content-length': '44',
+      connection: 'keep-alive',
+      'x-zm-trackingid': 'v=2.0;clid=us06;rid=WEB_e2ef2b2c835b3b18cdc4bd5dd6363ade',
+      'x-content-type-options': 'nosniff',
+      'cache-control': 'no-cache, no-store, must-revalidate, no-transform',
+      pragma: 'no-cache',
+      expires: 'Thu, 01 Jan 1970 00:00:00 GMT',
+      'set-cookie': [Array],
+      vary: 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers',
+      'x-ratelimit-limit': '999999999',
+      'x-ratelimit-remaining': '999998363',
+      'x-zm-zoneid': 'VA2',
+      'cf-cache-status': 'DYNAMIC',
+      'report-to': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=jUP%2FGKYUs50MCbeBWLOEeMSeaG0YdodqvprxtpVpJYJG4fmlTX8Zq2FbYY748HftJNXjme2wu3rriiW4bWEggiTVMctpgHdvOuBjN4n%2Bf62BNBQIUBpWvsN8FBep"}],"group":"cf-nel","max_age":604800}',
+      nel: '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}',
+      server: 'cloudflare',
+      'cf-ray': '802ebb9f6a3a0e2c-BOM',
+      'alt-svc': 'h3=":443"; ma=86400'
+    },
+    config: {
+      transitional: [Object],
+      adapter: [Function: httpAdapter],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus],
+      headers: [Object],
+      method: 'delete',
+      url: 'https://api.zoom.us/v2/meetings/undefined',
+      data: undefined
+    },
+    request: <ref *1> ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      socket: [TLSSocket],
+      _header: 'DELETE /v2/meetings/undefined HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjk0MDg3NDE5MDk4LCJpYXQiOjE2OTQwODc0MTR9.bpUITakGrcn0HQ9ZRzFM0R6n4rQH5PbD557jp7kENPk\r\n' +
+        'User-Agent: axios/0.26.1\r\n' +
+        'Host: api.zoom.us\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'DELETE',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/v2/meetings/undefined',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'api.zoom.us',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 16384,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    data: { code: 300, message: 'Invalid meeting id.' }
+  },
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+[2023-09-07T17:21:38.065] [ERROR] app.js - Error: Request failed with status code 400
+    at createError (D:\fork\mtn-zoom-webportal-backend\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (D:\fork\mtn-zoom-webportal-backend\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (D:\fork\mtn-zoom-webportal-backend\node_modules\axios\lib\adapters\http.js:322:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1376:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjk0MDg3NTAyNjI2LCJpYXQiOjE2OTQwODc0OTd9.PvIq3VU4DOnQvXt5FuWvQjb1ejPuLFWs7Rp3W6w05y0',
+      'User-Agent': 'axios/0.26.1'
+    },
+    method: 'delete',
+    url: 'https://api.zoom.us/v2/meetings/undefined',
+    data: undefined
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: true,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: true,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: false,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: 0,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: true,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'api.zoom.us',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 9,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'api.zoom.us',
+      _closeAfterHandlingError: false,
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      timeout: 5000,
+      parser: null,
+      _httpMessage: null,
+      [Symbol(alpncallback)]: null,
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: -1,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: 5000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 145268,
+        _onTimeout: [Function: bound ],
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 188,
+        [Symbol(triggerId)]: 186
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 1,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object]
+    },
+    _header: 'DELETE /v2/meetings/undefined HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjk0MDg3NTAyNjI2LCJpYXQiOjE2OTQwODc0OTd9.PvIq3VU4DOnQvXt5FuWvQjb1ejPuLFWs7Rp3W6w05y0\r\n' +
+      'User-Agent: axios/0.26.1\r\n' +
+      'Host: api.zoom.us\r\n' +
+      'Connection: keep-alive\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype] {},
+      freeSockets: [Object: null prototype],
+      keepAliveMsecs: 1000,
+      keepAlive: true,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      maxCachedSessions: 100,
+      _sessionCache: [Object],
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'DELETE',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    joinDuplicateHeaders: undefined,
+    path: '/v2/meetings/undefined',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: null,
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 400,
+      statusMessage: 'Bad Request',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      responseUrl: 'https://api.zoom.us/v2/meetings/undefined',
+      redirects: [],
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 74,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'api.zoom.us',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState],
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 0,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'https://api.zoom.us/v2/meetings/undefined',
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      authorization: [Array],
+      'user-agent': [Array],
+      host: [Array]
+    },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 16384,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  response: {
+    status: 400,
+    statusText: 'Bad Request',
+    headers: {
+      date: 'Thu, 07 Sep 2023 11:51:37 GMT',
+      'content-type': 'application/json;charset=UTF-8',
+      'content-length': '44',
+      connection: 'keep-alive',
+      'x-zm-trackingid': 'v=2.0;clid=us06;rid=WEB_752501ec3a004c67d08c3f616ca43d4d',
+      'x-content-type-options': 'nosniff',
+      'cache-control': 'no-cache, no-store, must-revalidate, no-transform',
+      pragma: 'no-cache',
+      expires: 'Thu, 01 Jan 1970 00:00:00 GMT',
+      'set-cookie': [Array],
+      vary: 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers',
+      'x-ratelimit-limit': '999999999',
+      'x-ratelimit-remaining': '999998352',
+      'x-zm-zoneid': 'VA2',
+      'cf-cache-status': 'DYNAMIC',
+      'report-to': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=QgiYQvCBZJoFIKDYuMjH5xfJAEHwRnZp6DV%2BHk39FjC0b6PXMqlJnKpsPolDiBTqaMgYDxUaPVc2XZhfblxjbokymwnaye9Qyw56YSiqH8Gg%2BmUYROpqL1dgPKTM"}],"group":"cf-nel","max_age":604800}',
+      nel: '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}',
+      server: 'cloudflare',
+      'cf-ray': '802ebda9bd3a3d0c-BOM',
+      'alt-svc': 'h3=":443"; ma=86400'
+    },
+    config: {
+      transitional: [Object],
+      adapter: [Function: httpAdapter],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus],
+      headers: [Object],
+      method: 'delete',
+      url: 'https://api.zoom.us/v2/meetings/undefined',
+      data: undefined
+    },
+    request: <ref *1> ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      socket: [TLSSocket],
+      _header: 'DELETE /v2/meetings/undefined HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjk0MDg3NTAyNjI2LCJpYXQiOjE2OTQwODc0OTd9.PvIq3VU4DOnQvXt5FuWvQjb1ejPuLFWs7Rp3W6w05y0\r\n' +
+        'User-Agent: axios/0.26.1\r\n' +
+        'Host: api.zoom.us\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'DELETE',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/v2/meetings/undefined',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'api.zoom.us',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 16384,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    data: { code: 300, message: 'Invalid meeting id.' }
+  },
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+[2023-09-07T17:25:18.728] [ERROR] app.js - Error: Request failed with status code 400
+    at createError (D:\fork\mtn-zoom-webportal-backend\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (D:\fork\mtn-zoom-webportal-backend\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (D:\fork\mtn-zoom-webportal-backend\node_modules\axios\lib\adapters\http.js:322:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1376:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjk0MDg3NzIzMzY3LCJpYXQiOjE2OTQwODc3MTh9.c8UVekvCi98LzelNdL7lpkoXEshQtsRPYKqi9KTbFNQ',
+      'User-Agent': 'axios/0.26.1'
+    },
+    method: 'delete',
+    url: 'https://api.zoom.us/v2/meetings/undefined',
+    data: undefined
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: true,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: true,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: false,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: 0,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: true,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'api.zoom.us',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 9,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'api.zoom.us',
+      _closeAfterHandlingError: false,
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      timeout: 5000,
+      parser: null,
+      _httpMessage: null,
+      [Symbol(alpncallback)]: null,
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: -1,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: 5000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 365930,
+        _onTimeout: [Function: bound ],
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 239,
+        [Symbol(triggerId)]: 237
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 1,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object]
+    },
+    _header: 'DELETE /v2/meetings/undefined HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjk0MDg3NzIzMzY3LCJpYXQiOjE2OTQwODc3MTh9.c8UVekvCi98LzelNdL7lpkoXEshQtsRPYKqi9KTbFNQ\r\n' +
+      'User-Agent: axios/0.26.1\r\n' +
+      'Host: api.zoom.us\r\n' +
+      'Connection: keep-alive\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype] {},
+      freeSockets: [Object: null prototype],
+      keepAliveMsecs: 1000,
+      keepAlive: true,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      maxCachedSessions: 100,
+      _sessionCache: [Object],
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'DELETE',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    joinDuplicateHeaders: undefined,
+    path: '/v2/meetings/undefined',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: null,
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 400,
+      statusMessage: 'Bad Request',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      responseUrl: 'https://api.zoom.us/v2/meetings/undefined',
+      redirects: [],
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 70,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'api.zoom.us',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState],
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 0,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'https://api.zoom.us/v2/meetings/undefined',
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      authorization: [Array],
+      'user-agent': [Array],
+      host: [Array]
+    },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 16384,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  response: {
+    status: 400,
+    statusText: 'Bad Request',
+    headers: {
+      date: 'Thu, 07 Sep 2023 11:55:18 GMT',
+      'content-type': 'application/json;charset=UTF-8',
+      'content-length': '44',
+      connection: 'keep-alive',
+      'x-zm-trackingid': 'v=2.0;clid=us06;rid=WEB_a85bf1ae36e150933a55951389644608',
+      'x-content-type-options': 'nosniff',
+      'cache-control': 'no-cache, no-store, must-revalidate, no-transform',
+      pragma: 'no-cache',
+      expires: 'Thu, 01 Jan 1970 00:00:00 GMT',
+      'set-cookie': [Array],
+      vary: 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers',
+      'x-ratelimit-limit': '999999999',
+      'x-ratelimit-remaining': '999998302',
+      'x-zm-zoneid': 'VA2',
+      'cf-cache-status': 'DYNAMIC',
+      'report-to': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=OFUUivtU8%2FEpxLuDu7NzeyG7xTevP%2FFn5Em6ocgrT9AdvnB05Y6P0jSHROKaeXcT8ioYJYa8jWH9yyXbrsApF4wmW7h4WYrc%2Fv%2FA9cbgr8VLcD1kNN%2FYvSbX6GKb"}],"group":"cf-nel","max_age":604800}',
+      nel: '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}',
+      server: 'cloudflare',
+      'cf-ray': '802ec30cffb146a7-BOM',
+      'alt-svc': 'h3=":443"; ma=86400'
+    },
+    config: {
+      transitional: [Object],
+      adapter: [Function: httpAdapter],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus],
+      headers: [Object],
+      method: 'delete',
+      url: 'https://api.zoom.us/v2/meetings/undefined',
+      data: undefined
+    },
+    request: <ref *1> ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      socket: [TLSSocket],
+      _header: 'DELETE /v2/meetings/undefined HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjk0MDg3NzIzMzY3LCJpYXQiOjE2OTQwODc3MTh9.c8UVekvCi98LzelNdL7lpkoXEshQtsRPYKqi9KTbFNQ\r\n' +
+        'User-Agent: axios/0.26.1\r\n' +
+        'Host: api.zoom.us\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'DELETE',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/v2/meetings/undefined',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'api.zoom.us',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 16384,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    data: { code: 300, message: 'Invalid meeting id.' }
+  },
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+[2023-09-07T17:28:25.871] [ERROR] app.js - Error: Request failed with status code 400
+    at createError (D:\fork\mtn-zoom-webportal-backend\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (D:\fork\mtn-zoom-webportal-backend\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (D:\fork\mtn-zoom-webportal-backend\node_modules\axios\lib\adapters\http.js:322:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1376:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjk0MDg3OTEwNDYzLCJpYXQiOjE2OTQwODc5MDV9.YOc9Y6_ClOYXPqagqz5yQqe_FX_p-DRkrBz_Zntnn_8',
+      'User-Agent': 'axios/0.26.1'
+    },
+    method: 'delete',
+    url: 'https://api.zoom.us/v2/meetings/undefined',
+    data: undefined
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: true,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: true,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: false,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: 0,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: true,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'api.zoom.us',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 9,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'api.zoom.us',
+      _closeAfterHandlingError: false,
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      timeout: 5000,
+      parser: null,
+      _httpMessage: null,
+      [Symbol(alpncallback)]: null,
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: -1,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: 5000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 553074,
+        _onTimeout: [Function: bound ],
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 290,
+        [Symbol(triggerId)]: 288
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 1,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object]
+    },
+    _header: 'DELETE /v2/meetings/undefined HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjk0MDg3OTEwNDYzLCJpYXQiOjE2OTQwODc5MDV9.YOc9Y6_ClOYXPqagqz5yQqe_FX_p-DRkrBz_Zntnn_8\r\n' +
+      'User-Agent: axios/0.26.1\r\n' +
+      'Host: api.zoom.us\r\n' +
+      'Connection: keep-alive\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype] {},
+      freeSockets: [Object: null prototype],
+      keepAliveMsecs: 1000,
+      keepAlive: true,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      maxCachedSessions: 100,
+      _sessionCache: [Object],
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'DELETE',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    joinDuplicateHeaders: undefined,
+    path: '/v2/meetings/undefined',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: null,
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 400,
+      statusMessage: 'Bad Request',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      responseUrl: 'https://api.zoom.us/v2/meetings/undefined',
+      redirects: [],
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 74,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'api.zoom.us',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState],
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 0,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'https://api.zoom.us/v2/meetings/undefined',
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      authorization: [Array],
+      'user-agent': [Array],
+      host: [Array]
+    },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 16384,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  response: {
+    status: 400,
+    statusText: 'Bad Request',
+    headers: {
+      date: 'Thu, 07 Sep 2023 11:58:25 GMT',
+      'content-type': 'application/json;charset=UTF-8',
+      'content-length': '44',
+      connection: 'keep-alive',
+      'x-zm-trackingid': 'v=2.0;clid=us06;rid=WEB_1cc15d08ebad88e057f7f110fb893098',
+      'x-content-type-options': 'nosniff',
+      'cache-control': 'no-cache, no-store, must-revalidate, no-transform',
+      pragma: 'no-cache',
+      expires: 'Thu, 01 Jan 1970 00:00:00 GMT',
+      'set-cookie': [Array],
+      vary: 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers',
+      'x-ratelimit-limit': '999999999',
+      'x-ratelimit-remaining': '999998258',
+      'x-zm-zoneid': 'VA2',
+      'cf-cache-status': 'DYNAMIC',
+      'report-to': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=9Sc7RNNwG%2FA1%2FzHGyb%2BInK9puab1tWaJeoUTNWnMqUMubeyiLmm31lYTFpAKuhjpTdQuFhO0LqXhMILfUfdO9S7O74j%2FYEttIunVF7DeyJnDEtx8h%2BJHuihVx9jO"}],"group":"cf-nel","max_age":604800}',
+      nel: '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}',
+      server: 'cloudflare',
+      'cf-ray': '802ec79e7ba346ec-BOM',
+      'alt-svc': 'h3=":443"; ma=86400'
+    },
+    config: {
+      transitional: [Object],
+      adapter: [Function: httpAdapter],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus],
+      headers: [Object],
+      method: 'delete',
+      url: 'https://api.zoom.us/v2/meetings/undefined',
+      data: undefined
+    },
+    request: <ref *1> ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      socket: [TLSSocket],
+      _header: 'DELETE /v2/meetings/undefined HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjk0MDg3OTEwNDYzLCJpYXQiOjE2OTQwODc5MDV9.YOc9Y6_ClOYXPqagqz5yQqe_FX_p-DRkrBz_Zntnn_8\r\n' +
+        'User-Agent: axios/0.26.1\r\n' +
+        'Host: api.zoom.us\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'DELETE',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/v2/meetings/undefined',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'api.zoom.us',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 16384,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    data: { code: 300, message: 'Invalid meeting id.' }
+  },
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+[2023-09-07T17:30:11.290] [ERROR] app.js - Error: Request failed with status code 400
+    at createError (D:\fork\mtn-zoom-webportal-backend\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (D:\fork\mtn-zoom-webportal-backend\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (D:\fork\mtn-zoom-webportal-backend\node_modules\axios\lib\adapters\http.js:322:11)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1376:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjk0MDg4MDE1OTEzLCJpYXQiOjE2OTQwODgwMTB9.CV0NdBIVFioWN32mxVdz7rS5jeVIz9eBISNmZDOGxRE',
+      'User-Agent': 'axios/0.26.1'
+    },
+    method: 'delete',
+    url: 'https://api.zoom.us/v2/meetings/undefined',
+    data: undefined
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      finish: [Function: requestOnFinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: true,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: true,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: false,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: 0,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    _closed: true,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: false,
+      _SNICallback: null,
+      servername: 'api.zoom.us',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 9,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'api.zoom.us',
+      _closeAfterHandlingError: false,
+      _readableState: [ReadableState],
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      timeout: 5000,
+      parser: null,
+      _httpMessage: null,
+      [Symbol(alpncallback)]: null,
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(verified)]: true,
+      [Symbol(pendingSession)]: null,
+      [Symbol(async_id_symbol)]: -1,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: 5000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 658491,
+        _onTimeout: [Function: bound ],
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 341,
+        [Symbol(triggerId)]: 339
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(kSetKeepAlive)]: true,
+      [Symbol(kSetKeepAliveInitialDelay)]: 1,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object]
+    },
+    _header: 'DELETE /v2/meetings/undefined HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjk0MDg4MDE1OTEzLCJpYXQiOjE2OTQwODgwMTB9.CV0NdBIVFioWN32mxVdz7rS5jeVIz9eBISNmZDOGxRE\r\n' +
+      'User-Agent: axios/0.26.1\r\n' +
+      'Host: api.zoom.us\r\n' +
+      'Connection: keep-alive\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: nop],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object: null prototype],
+      requests: [Object: null prototype] {},
+      sockets: [Object: null prototype] {},
+      freeSockets: [Object: null prototype],
+      keepAliveMsecs: 1000,
+      keepAlive: true,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      maxCachedSessions: 100,
+      _sessionCache: [Object],
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'DELETE',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    joinDuplicateHeaders: undefined,
+    path: '/v2/meetings/undefined',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: null,
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      rawHeaders: [Array],
+      rawTrailers: [],
+      joinDuplicateHeaders: undefined,
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 400,
+      statusMessage: 'Bad Request',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      responseUrl: 'https://api.zoom.us/v2/meetings/undefined',
+      redirects: [],
+      [Symbol(kCapture)]: false,
+      [Symbol(kHeaders)]: [Object],
+      [Symbol(kHeadersCount)]: 70,
+      [Symbol(kTrailers)]: null,
+      [Symbol(kTrailersCount)]: 0
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: 'api.zoom.us',
+    protocol: 'https:',
+    _redirectable: Writable {
+      _writableState: [WritableState],
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 0,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'https://api.zoom.us/v2/meetings/undefined',
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      authorization: [Array],
+      'user-agent': [Array],
+      host: [Array]
+    },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 16384,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  response: {
+    status: 400,
+    statusText: 'Bad Request',
+    headers: {
+      date: 'Thu, 07 Sep 2023 12:00:10 GMT',
+      'content-type': 'application/json;charset=UTF-8',
+      'content-length': '44',
+      connection: 'keep-alive',
+      'x-zm-trackingid': 'v=2.0;clid=us06;rid=WEB_d9463167df5680550aeed04263bc0929',
+      'x-content-type-options': 'nosniff',
+      'cache-control': 'no-cache, no-store, must-revalidate, no-transform',
+      pragma: 'no-cache',
+      expires: 'Thu, 01 Jan 1970 00:00:00 GMT',
+      'set-cookie': [Array],
+      vary: 'Origin, Access-Control-Request-Method, Access-Control-Request-Headers',
+      'x-ratelimit-limit': '999999999',
+      'x-ratelimit-remaining': '999998251',
+      'x-zm-zoneid': 'VA2',
+      'cf-cache-status': 'DYNAMIC',
+      'report-to': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=hHEc1%2BrjaVzyHl7oSPJaF11cZFBl3ChbNXgM2AGIFbG%2FioEpFrpo0GjhApc%2BCnLILF%2BckTBH37gWQPih%2FnyURbkPrkyylv%2Fd0w2%2F3lR3c25bGoJJmQ1XmpV1TCTN"}],"group":"cf-nel","max_age":604800}',
+      nel: '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}',
+      server: 'cloudflare',
+      'cf-ray': '802eca315e39f33b-BOM',
+      'alt-svc': 'h3=":443"; ma=86400'
+    },
+    config: {
+      transitional: [Object],
+      adapter: [Function: httpAdapter],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus],
+      headers: [Object],
+      method: 'delete',
+      url: 'https://api.zoom.us/v2/meetings/undefined',
+      data: undefined
+    },
+    request: <ref *1> ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      socket: [TLSSocket],
+      _header: 'DELETE /v2/meetings/undefined HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6bGE1LW5Ec1RfV1dyR1p3MTdFZFRBIiwiZXhwIjoxNjk0MDg4MDE1OTEzLCJpYXQiOjE2OTQwODgwMTB9.CV0NdBIVFioWN32mxVdz7rS5jeVIz9eBISNmZDOGxRE\r\n' +
+        'User-Agent: axios/0.26.1\r\n' +
+        'Host: api.zoom.us\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'DELETE',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/v2/meetings/undefined',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'api.zoom.us',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 16384,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    data: { code: 300, message: 'Invalid meeting id.' }
+  },
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+[2023-09-08T18:23:25.884] [ERROR] app.js - JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (D:\fork\mtn-zoom-webportal-backend\node_modules\jsonwebtoken\verify.js:60:17)
+    at exports.generatePassword (D:\fork\mtn-zoom-webportal-backend\src\controller\generatedPassword.js:41:34)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at auth.UserAuth (D:\fork\mtn-zoom-webportal-backend\src\auth\middleware.js:54:9)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:284:15
+[2023-09-08T18:27:18.082] [ERROR] app.js - JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (D:\fork\mtn-zoom-webportal-backend\node_modules\jsonwebtoken\verify.js:60:17)
+    at exports.generatePassword (D:\fork\mtn-zoom-webportal-backend\src\controller\generatedPassword.js:42:34)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at auth.UserAuth (D:\fork\mtn-zoom-webportal-backend\src\auth\middleware.js:54:9)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:284:15
+[2023-09-11T09:52:39.517] [ERROR] app.js - TypeError: Cannot read properties of undefined (reading 'split')
+    at utils.toMTNEmail (D:\fork\mtn-zoom-webportal-backend\src\utils\utils.js:11:23)
+    at exports.listRecurringMeetingget (D:\fork\mtn-zoom-webportal-backend\src\controller\listMeeting.js:438:23)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at auth.UserAuth (D:\fork\mtn-zoom-webportal-backend\src\auth\middleware.js:54:9)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\fork\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:284:15
+[2023-09-11T15:14:43.305] [ERROR] db.js - ReferenceError: prov is not defined
+    at exports.delete (D:\backup\mtn-zoom-webportal-backend\src\controller\endpoints.js:352:9)
+    at Layer.handle [as handle_request] (D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at auth.endPointsAuth (D:\backup\mtn-zoom-webportal-backend\src\auth\middleware.js:24:9)
+    at Layer.handle [as handle_request] (D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:346:12)
+[2023-09-11T15:16:36.536] [ERROR] db.js - ReferenceError: prov is not defined
+    at exports.delete (D:\backup\mtn-zoom-webportal-backend\src\controller\endpoints.js:352:9)
+    at Layer.handle [as handle_request] (D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at auth.endPointsAuth (D:\backup\mtn-zoom-webportal-backend\src\auth\middleware.js:24:9)
+    at Layer.handle [as handle_request] (D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:346:12)
+[2023-09-11T15:16:57.022] [ERROR] db.js - ReferenceError: prov is not defined
+    at exports.delete (D:\backup\mtn-zoom-webportal-backend\src\controller\endpoints.js:352:9)
+    at Layer.handle [as handle_request] (D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at auth.endPointsAuth (D:\backup\mtn-zoom-webportal-backend\src\auth\middleware.js:24:9)
+    at Layer.handle [as handle_request] (D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\backup\mtn-zoom-webportal-backend\node_modules\express\lib\router\index.js:346:12)
